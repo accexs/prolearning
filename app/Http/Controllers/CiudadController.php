@@ -139,6 +139,11 @@ class CiudadController extends Controller
     public function destroy($id)
     {
         //
+        $fotos = Ciudad::find($id)->fotos;
+        foreach ($fotos as $foto) {
+            # code...
+            \File::delete($foto->img);
+        }
         Ciudad::destroy($id);
         return response()->json(['success' => true]);
     }

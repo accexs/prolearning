@@ -1,0 +1,1883 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pic",
+				"picFile"
+			],
+			[
+				"file",
+				"$filename〔variable〕"
+			],
+			[
+				"pa",
+				"$path〔variable〕"
+			],
+			[
+				"ex",
+				"$extension〔variable〕"
+			],
+			[
+				"ci",
+				"ciudad_id"
+			],
+			[
+				"ar",
+				"archivo"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"inf",
+				"info_es"
+			],
+			[
+				"pro",
+				"programas"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ng",
+				"ng-class	AngularJS"
+			],
+			[
+				"data",
+				"data〔argument〕"
+			],
+			[
+				"ciu",
+				"ciudad"
+			],
+			[
+				"loa",
+				"loadingWeather"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"scri",
+				"script	Tag"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"ac",
+				"activities_es"
+			],
+			[
+				"ins",
+				"$instituto〔variable〕"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"del",
+				"delete〔keyword〕"
+			],
+			[
+				"selec",
+				"selectedPais"
+			],
+			[
+				"sele",
+				"selectedPais"
+			],
+			[
+				"ciudad",
+				"ciudadData"
+			],
+			[
+				"ng-m",
+				"ng-multiple	AngularJS"
+			],
+			[
+				"ng-i",
+				"ng-init	AngularJS"
+			],
+			[
+				"ciud",
+				"ciudadData"
+			],
+			[
+				"select",
+				"selectedPaises"
+			],
+			[
+				"get",
+				"getData〔argument〕"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"pais",
+				"paisCtrl"
+			],
+			[
+				"ng-op",
+				"ng-options	AngularJS"
+			],
+			[
+				"an",
+				"angular"
+			],
+			[
+				"cur",
+				"cursos"
+			],
+			[
+				"ciuda",
+				"ciudades"
+			],
+			[
+				"cu",
+				"ciudadData"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"R",
+				"Route"
+			],
+			[
+				"Validator",
+				"Validator-make	Validator-make"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"my",
+				"myModalLabel"
+			],
+			[
+				"id",
+				"id=〔attribute〕"
+			],
+			[
+				"but",
+				"button"
+			],
+			[
+				"sub",
+				"submitPais"
+			],
+			[
+				"P",
+				"Pais"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"form",
+				"form	Tag"
+			],
+			[
+				"load",
+				"loading"
+			],
+			[
+				"fo",
+				"form_title"
+			],
+			[
+				"name",
+				"name_es"
+			],
+			[
+				"nombre",
+				"nombre_es"
+			],
+			[
+				"inpu",
+				"inputt	input - text"
+			],
+			[
+				"inp",
+				"inputt	input - text"
+			],
+			[
+				"ng-s",
+				"ng-submit	AngularJS"
+			],
+			[
+				"ng-c",
+				"ng-controller	AngularJS"
+			],
+			[
+				"$interpol",
+				"$interpolateProvider	AngularJS"
+			],
+			[
+				"dele",
+				"delete"
+			],
+			[
+				"pai",
+				"paises"
+			],
+			[
+				"s",
+				"submit	.submit()"
+			],
+			[
+				"ge",
+				"get	.get()"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"co",
+				"controller	AngularJS"
+			],
+			[
+				"mo",
+				"module	AngularJS"
+			],
+			[
+				"m",
+				"module	AngularJS"
+			],
+			[
+				"Schema",
+				"Schema-table	Schema-table"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"requei",
+				"required"
+			],
+			[
+				"hi",
+				"hide〔function〕"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"h",
+				"hide〔function〕"
+			],
+			[
+				"re",
+				"registrado"
+			],
+			[
+				"op",
+				"openModal"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"repor",
+				"$reporte〔variable〕"
+			],
+			[
+				"cate",
+				"categoria"
+			],
+			[
+				"rep",
+				"$reporte〔variable〕"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"tabla",
+				"tabla_reportes"
+			],
+			[
+				"Pedido",
+				"PedidoController@store"
+			],
+			[
+				"pe",
+				"$pedido〔variable〕"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"User",
+				"User::all"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"em",
+				"empresa"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"usu",
+				"$usuario〔variable〕"
+			],
+			[
+				"us",
+				"usuario"
+			],
+			[
+				"sto",
+				"store"
+			],
+			[
+				"cr",
+				"crearusuario"
+			],
+			[
+				"req",
+				"$request〔variable〕"
+			],
+			[
+				"A",
+				"Auth"
+			],
+			[
+				"S",
+				"Subcategoria"
+			],
+			[
+				"Empre",
+				"Empresa::find"
+			],
+			[
+				"Req",
+				"Request::all"
+			],
+			[
+				"cat",
+				"$categoria〔variable〕"
+			],
+			[
+				"subc",
+				"subcategoria_id"
+			],
+			[
+				"su",
+				"subcategoria_id"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"Ad",
+				"AdmController@crear"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"r",
+				"ready〔function〕"
+			],
+			[
+				"w",
+				"with"
+			],
+			[
+				"fore",
+				"foreign"
+			],
+			[
+				"es",
+				"estado"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"nu",
+				"numero"
+			],
+			[
+				"val",
+				"$validator〔variable〕"
+			],
+			[
+				"Ts",
+				"Tsemillero"
+			],
+			[
+				"In",
+				"Input::get('unidades"
+			],
+			[
+				"arbo",
+				"arbolt"
+			],
+			[
+				"arb",
+				"$arbol〔variable〕"
+			],
+			[
+				"arbol",
+				"$arbolt〔variable〕"
+			],
+			[
+				"I",
+				"InvforController"
+			],
+			[
+				"bloq",
+				"$bloque_aux〔variable〕"
+			],
+			[
+				"par",
+				"$parcela〔variable〕"
+			],
+			[
+				"ca",
+				"candidato"
+			],
+			[
+				"para",
+				"parameters"
+			],
+			[
+				"ret",
+				"return〔keyword〕"
+			],
+			[
+				"messa",
+				"$messages〔variable〕"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"pri",
+				"print_r($output"
+			],
+			[
+				"mar",
+				"margin-left: 〔property〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/backend/ciudad.blade.php",
+			"settings":
+			{
+				"buffer_size": 7464,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/accexs/Projects/rafat.local/app/controllers/HorarioController.php",
+			"settings":
+			{
+				"buffer_size": 1928,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2016_02_25_222229_create_fotos_table.php",
+			"settings":
+			{
+				"buffer_size": 960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/PaisController.php",
+			"settings":
+			{
+				"buffer_size": 3581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/accexs/Projects/laravel-angular-comment-app-master/app/config/database.php",
+			"settings":
+			{
+				"buffer_size": 3358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Kernel.php",
+			"settings":
+			{
+				"buffer_size": 1465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Pais.php",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/InstitutoController.php",
+			"settings":
+			{
+				"buffer_size": 6718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/services/weatherService.js",
+			"settings":
+			{
+				"buffer_size": 251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/services/ciudadService.js",
+			"settings":
+			{
+				"buffer_size": 708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/UploadController.php",
+			"settings":
+			{
+				"buffer_size": 839,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/FotoController.php",
+			"settings":
+			{
+				"buffer_size": 828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/CiudadController.php",
+			"settings":
+			{
+				"buffer_size": 3986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 2434,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/controllers/ciudadCtrl.js",
+			"settings":
+			{
+				"buffer_size": 4125,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/PlappController.php",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/controllers/paisCtrl.js",
+			"settings":
+			{
+				"buffer_size": 2111,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/backend/pais.blade.php",
+			"settings":
+			{
+				"buffer_size": 3514,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Instituto.php",
+			"settings":
+			{
+				"buffer_size": 644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/services/paisService.js",
+			"settings":
+			{
+				"buffer_size": 680,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/app.js",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/layouts/app.blade.php",
+			"settings":
+			{
+				"buffer_size": 4639,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 348.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Laravel ",
+				"Laravel Artisan: List"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"Package Control: r",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Laravel model",
+				"Laravel Generate: Model"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"view.encoding()"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/accexs/Projects/prolearning.local/app/Foto.php",
+		"/home/accexs/Projects/prolearning.local/app/Ciudad.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_25_222229_create_fotos_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_030230_create_cursos_table.php",
+		"/home/accexs/Projects/rafat.local/app/controllers/HorarioController.php",
+		"/home/accexs/Projects/prolearning.local/public/js/loading-bar.js",
+		"/home/accexs/Projects/prolearning.local/public/js/icons.json",
+		"/home/accexs/Desktop/city.list.json",
+		"/home/accexs/Projects/rafat.local/app/routes.php",
+		"/home/accexs/Projects/prolearning.local/public/js/tinymce.js",
+		"/home/accexs/.cache/.fr-T6pv2E/ui-tinymce-master/demo/demo.html",
+		"/home/accexs/Projects/prolearning.local/public/js/weather/weather.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/weatherCtrl.js",
+		"/home/accexs/Desktop/laravel-angular-cms-master/public/admin/js/app.js",
+		"/tmp/fz3temp-1/rsvp.php",
+		"/home/accexs/Projects/prolearning.local/public/js/services/institutoService.js",
+		"/home/accexs/Projects/prolearning.local/public/js/services/institutosService.js",
+		"/home/accexs/Projects/prolearning.local/public/js/services/ciudadService.js",
+		"/home/accexs/Projects/prolearning.local/public/js/services/cursoService.js",
+		"/home/accexs/Projects/prolearning.local/public/js/services/programaService.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/ciudadCtrl.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/programaCtrl.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/cursoCtrl.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/institutoCtrl.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/cursosCtrl.js",
+		"/home/accexs/.cache/.fr-4MdbtO/laravel-angularjs-crud/public/app/controllers/employees.js",
+		"/home/accexs/.cache/.fr-oGHa2i/laravel-angularjs-crud/resources/views/index.php",
+		"/home/accexs/.cache/.fr-8MoYBO/laravel-angularjs-crud/public/app/app.js",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/mainCtrl.js",
+		"/home/accexs/Projects/prolearning.local/app/User.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/backend/index.blade.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/PlAppController.php",
+		"/home/accexs/.cache/.fr-6H6slr/laravel-angularjs-crud/app/Http/Controllers/Employees.php",
+		"/home/accexs/Projects/prolearning.local/app/Pais.php",
+		"/home/accexs/.cache/.fr-dKD6Qs/laravel-angularjs-crud/app/Http/routes.php",
+		"/home/accexs/Projects/prolearning.local/resources/lang/es/validation.php",
+		"/home/accexs/Projects/prolearning.local/public/js/app.js",
+		"/home/accexs/.cache/.fr-WXbSd9/laravel-angularjs-crud/public/css/bootstrap.min.css",
+		"/home/accexs/Projects/laravel-angular-comment-app-master/public/js/services/commentService.js",
+		"/home/accexs/Projects/laravel-angular-comment-app-master/public/js/controllers/mainCtrl.js",
+		"/home/accexs/.cache/.fr-l0LjBZ/laravel-angularjs-crud/public/app/app.js",
+		"/home/accexs/Projects/laravel-angular-comment-app-master/app/routes.php",
+		"/home/accexs/Projects/laravel-angular-comment-app-master/app/views/index.php",
+		"/home/accexs/Desktop/laravel-angular-comment-app-master/app/views/index.php",
+		"/home/accexs/Desktop/laravel-angular-comment-app-master/app/config/database.php",
+		"/home/accexs/Desktop/laravel-angular-cms-master/resources/views/admin/users/create.blade.php",
+		"/home/accexs/Desktop/laravel-angular-comment-app-master/public/js/controllers/mainCtrl.js",
+		"/home/accexs/Desktop/laravel-angular-comment-app-master/public/js/app.js",
+		"/home/accexs/Desktop/laravel-angular-comment-app-master/public/js/services/commentService.js",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/resources/views/index.php",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/public/scripts/services/time.js",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/app/Http/Controllers/TimeEntriesController.php",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/app/Http/Controllers/UsersController.php",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/public/scripts/controllers/TimeEntry.js",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/public/scripts/services/user.js",
+		"/home/accexs/Desktop/laravel-angular-time-tracker-master/artisan",
+		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/EncryptCookies.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/VerifyCsrfToken.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/home.blade.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/Auth/AuthController.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/backend/pais.blade.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_024903_create_paises_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_024923_create_ciudades_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_025448_create_institutos_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_030140_create_programas_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/home/accexs/Projects/prolearning.local/config/app.php",
+		"/home/accexs/Projects/prolearning.local/.env",
+		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/AppController.php",
+		"/home/accexs/Projects/rafat.local/app/database/migrations/2015_09_10_005155_create_grado_seccion_table.php",
+		"/home/accexs/Projects/rafat.local/app/database/migrations/2015_09_10_004848_create_seccion_table.php",
+		"/home/accexs/Projects/rafat.local/app/database/migrations/2015_09_08_024625_create_users_table.php",
+		"/home/accexs/Projects/prolearning.local/resources/lang/es/README.md",
+		"/home/accexs/Desktop/pldump/institutos.csv",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/home/accexs/Projects/rafat.local/app/views/login.blade.php",
+		"/home/accexs/Projects/rafat.local/app/controllers/AuthController.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/welcome.blade.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/auth/login.blade.php",
+		"/home/accexs/Projects/prolearning.local/resources/views/auth/register.blade.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/Authenticate.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/Controller.php",
+		"/home/accexs/.homestead/Homestead.yaml",
+		"/home/accexs/Projects/october.local/install-master/index.php",
+		"/home/accexs/Projects/october.local/install-master/install_files/install.log",
+		"/home/accexs/.cache/.fr-xpdKfn/install-master/README.md",
+		"/tmp/fz3temp-1/index.php",
+		"/home/accexs/Desktop/curso/indicador pdvsa",
+		"/tmp/sublime-sftp-browse-1441238630/prolearning.com.ve/prolearning.com.ve/htdocs/index.php",
+		"/home/accexs/Desktop/index.php",
+		"/tmp/sublime-sftp-browse-1441228403/prolearning.com.ve/prolearning.com.ve/htdocs/index.php",
+		"/home/accexs/Desktop/popup2/index.php",
+		"/home/accexs/Desktop/popup4/popup.css",
+		"/home/accexs/Desktop/popup4/popup 2 desmontado",
+		"/home/accexs/Desktop/popup4/index.php",
+		"/tmp/sublime-sftp-browse-1441066342/prolearning.com.ve/prolearning.com.ve/htdocs/popup.css",
+		"/tmp/sublime-sftp-browse-1441065600/prolearning.com.ve/prolearning.com.ve/htdocs/index.php",
+		"/tmp/sublime-sftp-browse-1441066812/prolearning.com.ve/prolearning.com.ve/htdocs/header.php",
+		"/home/accexs/Desktop/popup2/desmontadopopup",
+		"/home/accexs/Desktop/prolearning.com.ve/htdocs/index.php",
+		"/home/accexs/Desktop/popup4/style.css",
+		"/home/accexs/Projects/naturarte.local/resources/views/administrador/mastera.blade.php",
+		"/home/accexs/Projects/naturarte.local/resources/views/administrador/generar.blade.php",
+		"/tmp/fz3temp-1/mastera.blade.php",
+		"/tmp/fz3temp-1/generar.blade.php",
+		"/home/accexs/.config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+		"/home/accexs/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/accexs/Projects/prolearning.local/gulpfile.js",
+		"/home/accexs/Projects/prolearning.local/resources/assets/less/admin.less",
+		"/home/accexs/Desktop/popup2/popup 2 desmontado",
+		"/home/accexs/Desktop/htdocs/index.php",
+		"/home/accexs/Desktop/naturarte/app/Http/Requests/Auth/LoginRequest.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/mastera.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/usuario/crearpedido.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/usuario/listpedido.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/editusuario.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/empresas.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/usuario.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/generar.blade.php",
+		"/home/accexs/Desktop/naturarte/resources/views/administrador/reporte.blade.php",
+		"/home/accexs/Projects/arbol.local/app/views/layouts/master.blade.php",
+		"/home/accexs/Desktop/naturarte/app/Subcategoria.php",
+		"/home/accexs/Desktop/naturarte/app/Reporte.php",
+		"/home/accexs/Desktop/naturarte/app/Pedido.php",
+		"/home/accexs/Desktop/naturarte/app/Empresa.php",
+		"/home/accexs/Desktop/naturarte/app/User.php",
+		"/home/accexs/Desktop/naturarte/app/Categoria.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"load",
+			"caracas",
+			"ciudad",
+			"pais",
+			"city",
+			"ciudad",
+			"city",
+			"ciudad",
+			"pais",
+			"created",
+			"pais",
+			"Pais",
+			"pais",
+			"intput",
+			">    ",
+			"6",
+			"myForm",
+			"my",
+			"    \n",
+			"jq",
+			"unidades",
+			"form",
+			"cambios de pieza",
+			"cambios de piezas",
+			"<td>{{ $reporte->empresa }}</td>\n        <td>{{ $reporte->categoria }}</td>\n        <td>{{ $reporte->materiales }}</td>\n        <td>{{ $reporte->descripcion }}</td>\n        <td>{{ $reporte->fecha }}</td>",
+			"subcategoria",
+			"sub_",
+			"get",
+			"Input",
+			"dato",
+			"datos",
+			"dato",
+			"datos",
+			"reporte",
+			"dato",
+			"datos",
+			"save",
+			"ciudadest",
+			"deslp",
+			"programas",
+			"size",
+			"nap",
+			"logo",
+			"horario cor",
+			"top",
+			"fecha",
+			"instituto-ajax",
+			"instituto",
+			"form",
+			"cadivi",
+			"¡",
+			"form_control",
+			"string",
+			"300",
+			"arbol",
+			"include",
+			"empty",
+			".empty();",
+			"empty();",
+			"empty();;",
+			"$(\"#ciudad-ajax,#instituto-ajax\").val(\"\").empty();;",
+			"ciudad",
+			"panama",
+			"alpha_dash",
+			"apha",
+			"2",
+			"50",
+			"2",
+			"max",
+			"{",
+			"idArbol",
+			"phone",
+			"Bloque",
+			"usuario",
+			"unidad",
+			"unidades"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"instituto",
+			"curso",
+			"programa",
+			"ciudad",
+			"curso",
+			"instituto",
+			"programa",
+			"ciudad",
+			"<td>{{ $reporte->empresa->nombre }}</td>\n           <td>{{ $reporte->categoria->nombre }}</td>\n           <td>{{ $reporte->materiales }}</td>\n           <td>{{ $reporte->descripcion }}</td>\n           <td>{{ $reporte->fecha }}</td>",
+			"subcategoria->nombre",
+			"sub",
+			"input",
+			"Request",
+			"empresa",
+			"empresas",
+			"reporte",
+			"reportes",
+			"integer",
+			"500",
+			"alpha",
+			":min",
+			":max",
+			":min",
+			"id",
+			"codEspecie",
+			"Parcela",
+			"unidad",
+			"bloque",
+			"bloques"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/backend/ciudad.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								917
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 362.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/accexs/Projects/rafat.local/app/controllers/HorarioController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								775,
+								775
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "database/migrations/2016_02_25_222229_create_fotos_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Controllers/PaisController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/accexs/Projects/laravel-angular-comment-app-master/app/config/database.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1743,
+								1743
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Kernel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Pais.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/Http/Controllers/InstitutoController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3058,
+								3058
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1581.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/js/services/weatherService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/js/services/ciudadService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/Http/Controllers/UploadController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								836
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 11,
+					"file": "app/Http/Controllers/FotoController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								801,
+								801
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/Http/Controllers/CiudadController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1761,
+								1761
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1059,
+								1059
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "public/js/controllers/ciudadCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2872,
+								2872
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/Http/Controllers/PlappController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "public/js/controllers/paisCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2061,
+								2061
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1059.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "resources/views/backend/pais.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2511,
+								2511
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/Instituto.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "public/js/services/paisService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								680,
+								680
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "public/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4221,
+								4221
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1785.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "prolearning.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Resources/arbol.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

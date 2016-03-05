@@ -23,6 +23,7 @@ angular.module('ciudadCtrl', [])
 		});
 
 	$scope.modal = function(mode, id) {
+		$scope.picFile = '';
 		$scope.mode = mode;
 		$scope.errors = "";
 		Pais.get()
@@ -48,6 +49,7 @@ angular.module('ciudadCtrl', [])
 				Ciudad.show(id)
 					.success(function(data) {
 						$scope.ciudadData = data;
+						//alert(data.fotos[0].img);
 						Pais.show(data.pais_id)
 							.success(function(getData){
 								$scope.selectedPais = getData;
@@ -72,6 +74,7 @@ angular.module('ciudadCtrl', [])
 								//$scope.loadingWeather = false;
 							});
 						//get photos
+						$scope.picFile = data.fotos[0].img
 						//$scope.loading = false;
 					});
 				break;
@@ -91,13 +94,11 @@ angular.module('ciudadCtrl', [])
 		$scope.ciudadData.pais =  $scope.selectedPais.id;
 		Ciudad.save(mode, $scope.ciudadData, id)
 			.success(function(data) {
-				//alert(data.ciudad_id);
 				if (data.code == 400) {
 					//$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
 					//$scope.ciudadForm.$dirty = false;
-
 					//save picture if any
 					img1.upload = Upload.upload({
 						url: 'api/fotos',

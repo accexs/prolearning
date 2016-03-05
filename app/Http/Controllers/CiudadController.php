@@ -20,7 +20,7 @@ class CiudadController extends Controller
     public function index()
     {
         //
-        return response()->json(Ciudad::all());
+        return response()->json(Ciudad::with('fotos')->get());
     }
 
     /**
@@ -79,7 +79,7 @@ class CiudadController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Ciudad::find($id));
+        return response()->json(Ciudad::with('fotos')->find($id));
     }
 
     /**
@@ -120,9 +120,14 @@ class CiudadController extends Controller
                 $ciudad -> info_es = $request->input('info_es');
                 $ciudad -> info_en = $request->input('info_en');
                 $ciudad -> code = $request->input('code');
-                Pais::find($request->input('pais'))->ciudades() -> save($ciudad);
-
-                return response()->json(['success' => true]);
+                $fotos = $ciudad->fotos;
+                foreach ($fotos as $foto) {
+                    # code...
+                    \File::delete($foto->img);
+                }
+                Pais::find($request->input('pais_id'))->ciudades() -> save($ciudad);
+                return response()->json(['success' => true,
+                        'ciudad_id' => $ciudad -> id]);
             }
         } catch (Exception $e) {
             \Log::info('Error editing ciudad: '.$e);

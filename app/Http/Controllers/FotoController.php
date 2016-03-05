@@ -21,14 +21,25 @@ class FotoController extends Controller
     		$file = $request->file('img1');
     		$foto = new Foto;
     		$extension = $file->getClientOriginalExtension();
-    		$filename = $foto -> id .'pic'.'.'.$extension;
+    		$filename = uniqid('img_') .'.'.$extension;
     		$path = 'uploads/';
     		$file->move($path,$filename);
     		$foto -> img = $path.$filename;
     		//check if pais or ciudad
-    		$foto -> ciudad_id = $request->input('ciudad_id');
-    		$foto -> save();
-    		return response()->json(['success' => true]);
+    		if ($request->input('ciudad_id')) {
+    			# code...
+    			$foto -> ciudad_id = $request->input('ciudad_id');
+    			$foto -> save();
+    			return response()->json(['success' => true]);
+    		}elseif ($request->input('pais_id')) {
+    			# code...
+    			$foto -> pais_id = $request->input('ciudad_id');
+    			$foto -> save();
+    			return response()->json(['success' => true]);
+    		}else{
+    			return response()->json(['success' => false]);
+    		}
+    		
     	}else{
     		return response()->json(['success' => false]);
     	}

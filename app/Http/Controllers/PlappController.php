@@ -19,4 +19,9 @@ class PlappController extends Controller
     	//
     	return view('backend.ciudad');
     }
+
+    function instituto(){
+    	//
+    	return view('backend.instituto');
+    }
 }

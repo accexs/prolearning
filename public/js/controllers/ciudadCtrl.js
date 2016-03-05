@@ -74,7 +74,7 @@ angular.module('ciudadCtrl', [])
 								//$scope.loadingWeather = false;
 							});
 						//get photos
-						$scope.picFile = data.fotos[0].img
+						$scope.picFile = data.fotos[data.fotos.length-1].img
 						//$scope.loading = false;
 					});
 				break;

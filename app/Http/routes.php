@@ -49,10 +49,10 @@ Route::group(['middleware' => ['web']], function () {
         Route::post('ciudades/{id}', 'CiudadController@update');
 
         //institutos
-        Route::resource('institutos', 'CiudadController',array(
+        Route::resource('institutos', 'InstitutoController',array(
             'only' => array('index', 'show', 'store', 'destroy'))
         );
-        Route::post('institutos/{id}', 'CiudadController@update');
+        Route::post('institutos/{id}', 'InstitutoController@update');
 
         //programas
         Route::resource('programas', 'ProgramaController',array(

@@ -7,9 +7,6 @@ angular.module('ciudadCtrl', [])
 	//object to hold weather data from openwather
 	$scope.weather = {};
 	
-
-
-
 	//loadin variable to show the spining loading icon
 	//$scope.loading = true;
 

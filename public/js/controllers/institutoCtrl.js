@@ -1,7 +1,7 @@
 angular.module('institutoCtrl', [])
 
 // inject the instituto service into our controller
-.controller('institutoController', function($scope, $http, instituto) {
+.controller('institutoController', function($scope, $http, Instituto, Ciudad) {
 	//object to hold all the data for the new instituto form
 	$scope.institutoData = {};
 
@@ -11,15 +11,19 @@ angular.module('institutoCtrl', [])
 	//get all institutoes first and bind it to the $scope.institutoes object
 	//use the funcion created in service
 	//GET ALL institutoES
-	instituto.get()
+	Instituto.get()
 		.success(function(data) {
 			$scope.institutos = data;
-			$scope.loading = false;
+			//$scope.loading = false;
 		});
 
 	$scope.modal = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
+		Ciudad.get()
+			.success(function(getData){
+				$scope.ciudades = getData;
+			});
 		switch (mode) {
 			case 'create':
 				$scope.institutoData = {
@@ -45,16 +49,18 @@ angular.module('institutoCtrl', [])
 					'activities_es' : '',
 					'activities_en' : '',
 					'price' : '',
+					'ciudad' : '',
 					'mail' : ''};
+				delete $scope.selectedCiudad;
 				$scope.form_title = "Agregar instituto";
 				break;
 			case 'edit':
 				$scope.form_title = "Editar instituto";
 				$scope.id = id;
-				instituto.show(id)
+				Instituto.show(id)
 					.success(function(data) {
 						$scope.institutoData = data;
-						$scope.loading = false;
+						//$scope.loading = false;
 					});
 				break;
 			default:
@@ -66,19 +72,20 @@ angular.module('institutoCtrl', [])
 
 	//function to handle submitting the form
 	//SAVE instituto
-	$scope.submitinstituto = function(mode, id) {
-		$scope.loading = true;
+	$scope.submitInstituto = function(mode, id) {
+		//$scope.loading = true;
 		//save instituto pass comment data from the form
 		//use the function created in service
-		instituto.save(mode, $scope.institutoData, id)
+		$scope.institutoData.ciudad = $scope.selectedCiudad.id;
+		Instituto.save(mode, $scope.institutoData, id)
 			.success(function(data) {
 				if (data.code == 400) {
-					$scope.loading = false;
+					//$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
 					//$scope.institutoForm.$dirty = false;
 					//if successful, refresh instituto list
-					instituto.get()
+					Instituto.get()
 						.success(function(getData) {
 							$scope.institutos = getData;
 							$scope.loading = false;
@@ -94,9 +101,9 @@ angular.module('institutoCtrl', [])
 
 	//function to handle delete instituto
 	$scope.deleteinstituto = function(id) {
-		$scope.loading = true;
+		//$scope.loading = true;
 		//use function created in service
-		instituto.destroy(id)
+		Instituto.destroy(id)
 			.success(function(data){
 				//if successful refresh instituto list
 				instituto.get()

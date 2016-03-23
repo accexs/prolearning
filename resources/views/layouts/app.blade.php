@@ -97,8 +97,10 @@
     <script src="js/loading-bar.js"></script>
     <script src="js/controllers/paisCtrl.js"></script>
     <script src="js/controllers/ciudadCtrl.js"></script>
+    <script src="js/controllers/institutoCtrl.js"></script>
     <script src="js/services/paisService.js"></script>
     <script src="js/services/ciudadService.js"></script>
+    <script src="js/services/institutoService.js"></script>
     <script src="js/services/weatherService.js"></script>
 </body>
 </html>

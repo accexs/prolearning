@@ -7,6 +7,8 @@ var plApp = angular.module('plApp',
 		'paisService',
 		'ciudadCtrl',
 		'ciudadService',
+		'institutoCtrl',
+		'institutoService',
 		'weatherService'
 		],
 		function($interpolateProvider){

@@ -61,7 +61,7 @@ class InstitutoController extends Controller
                 $instituto -> logo = $request->input('logo');
                 $instituto -> location1 = $request->input('location1');
                 $instituto -> coord1 = $request->input('coord1');
-                $instituto location2 -> = $request->input('location2');
+                $instituto -> location2 = $request->input('location2');
                 $instituto -> coord2 = $request->input('coord2');
                 $instituto -> location3 = $request->input('location3');
                 $instituto -> coord3 = $request->input('coord3');
@@ -79,7 +79,7 @@ class InstitutoController extends Controller
                 $instituto -> activities_en = $request->input('activities_en');
                 $instituto -> price = $request->input('prie');
                 $instituto -> mail = $request->input('mail');
-                Ciudad::find($request->input('ciudad'))->institutos -> save($instituto);
+                Ciudad::find($request->input('ciudad'))->institutos() -> save($instituto);
 
                 return response()->json(['success' => true]);
             }
@@ -141,7 +141,7 @@ class InstitutoController extends Controller
                 $instituto -> logo = $request->input('logo');
                 $instituto -> location1 = $request->input('location1');
                 $instituto -> coord1 = $request->input('coord1');
-                $instituto location2 -> = $request->input('location2');
+                $instituto -> location2 = $request->input('location2');
                 $instituto -> coord2 = $request->input('coord2');
                 $instituto -> location3 = $request->input('location3');
                 $instituto -> coord3 = $request->input('coord3');

@@ -6,7 +6,7 @@ angular.module('paisCtrl', [])
 	$scope.paisData = {};
 
 	//loadin variable to show the spining loading icon
-	$scope.loading = true;
+	//$scope.loading = true;
 
 	//get all paises first and bind it to the $scope.paises object
 	//use the funcion created in service
@@ -14,7 +14,7 @@ angular.module('paisCtrl', [])
 	Pais.get()
 		.success(function(data) {
 			$scope.paises = data;
-			$scope.loading = false;
+			//$scope.loading = false;
 		});
 
 	$scope.modal = function(mode, id) {

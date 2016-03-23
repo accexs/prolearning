@@ -29,58 +29,79 @@
                     <form name="institutoForm" class="form-horizontal" novalidate="" ng-submit="submitInstituto(mode, id, picFile)" enctype="multipart/form-data">
                         <div class="row">
                                 <div class="form-group error">
-                                    <label for="pais" class="col-md-4 control-label">Pais</label>
+                                    <label for="ciudad" class="col-md-4 control-label">Ciudad</label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="pais" ng-model="selectedPais" ng-options="pais.name_es for pais in paises track by pais.id" required>
-                                        <option value="">Seleccione pais</option>
+                                        <select class="form-control" name="ciudad" ng-model="selectedCiudad" ng-options="ciudad.name_es for ciudad in ciudades track by ciudad.id" required>
+                                        <option value="">Seleccione ciudad</option>
                                         </select>
                                         <p class="col-md-offset-3" ng-show="institutoForm.pais.$error.required" class="help-inline">Pais es requerido.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="name_es" class="col-md-4 control-label">Nombre español</label>
+                                    <label for="name" class="col-md-4 control-label">Nombre</label>
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" name="name" value=" <% name_es %> " ng-model="institutoData.name_es" required>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.name_es.$invalid" class="help-inline">Nombre es requerido.</p>    
+                                        <input class="form-control" type="text" name="name" value=" <% name %> " ng-model="institutoData.name" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.name.$invalid" class="help-inline">Nombre es requerido.</p>    
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="name_en" class="col-md-4 control-label">Nombre ingles</label>
-                                    <div class="col-md-4">
-                                        <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="institutoData.name" required>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>    
-                                    </div>
-                                </div>
-                                <div class="form-group error">
-                                    <label for="name_en" class="col-md-4 control-label">Informacion español</label>
+                                    <label for="desc_es" class="col-md-4 control-label">Descripción español</label>
                                     <div class="col-md-6">
-                                        <textarea ui-tinymce class="form-control" type="text" name="info_es" value=" <% info_es %> " ng-model="institutoData.info_es" required></textarea>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.info_es.$invalid" class="help-inline">Informacion requerida.</p>
+                                        <textarea ui-tinymce class="form-control" type="text" name="desc_es" value=" <% desc_es %> " ng-model="institutoData.desc_es" required></textarea>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.desc_es.$invalid" class="help-inline">Descripción requerida.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="info_en" class="col-md-4 control-label">Informacion ingles</label>
+                                    <label for="desc_en" class="col-md-4 control-label">Descripción ingles</label>
                                     <div class="col-md-6">
-                                        <textarea ui-tinymce class="form-control" type="text" name="info_en" value=" <% info_en %> " ng-model="institutoData.info_en" required></textarea>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.info_en.$invalid" class="help-inline">Informacion requerida.</p>
+                                        <textarea ui-tinymce class="form-control" type="text" name="desc_en" value=" <% desc_en %> " ng-model="institutoData.desc_en" required></textarea>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.desc_en.$invalid" class="help-inline">Descripción requerida.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="code" class="col-md-4 control-label">Código clima</label>
+                                    <label for="code" class="col-md-4 control-label">Ubicación 1</label>
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" name="code" value=" <% code %> " ng-model="institutoData.code" required>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.code.$invalid" class="help-inline">Informacion requerida.</p>
-                                    </div>
-                                </div>
-                                <div ng-show="mode == 'edit'" class="form-group error">
-                                    <label class="col-md-4 control-label" for="">Widget Clima</label>
-                                    <div class="col-md-4">
-                                        <i style="font-size: 40px" ng-class="icon"></i>
-                                        <i style="font-size: 20px" class="wi wi-thermometer"></i><%weather.main.temp%>
+                                        <input class="form-control" type="text" name="location1" value=" <% location1 %> " ng-model="institutoData.location1" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.location1.$invalid" class="help-inline">Ubicación requerida.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label class="col-md-4 control-label" for="img1">Imagen 1</label>
+                                    <label for="code" class="col-md-4 control-label">Coordenadas 1</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="coord1" value=" <% coord1 %> " ng-model="institutoData.coord1" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.coord1.$invalid" class="help-inline">Coordenadas requeridas.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <label for="code" class="col-md-4 control-label">Ubicación 2</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="location2" value=" <% location2 %> " ng-model="institutoData.location2" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.location2.$invalid" class="help-inline">Ubicación requerida.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <label for="code" class="col-md-4 control-label">Coordenadas 2</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="coord2" value=" <% coord2 %> " ng-model="institutoData.coord2" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.coord2.$invalid" class="help-inline">Coordenadas requeridas.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <label for="code" class="col-md-4 control-label">Ubicación 3</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="location3" value=" <% location3 %> " ng-model="institutoData.location3" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.location3.$invalid" class="help-inline">Ubicación requerida.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <label for="code" class="col-md-4 control-label">Coordenadas 3</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="coord3" value=" <% coord3 %> " ng-model="institutoData.coord3" required>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.coord3.$invalid" class="help-inline">Coordenadas requeridas.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <label class="col-md-4 control-label" for="img1">Logo</label>
                                     <div class="col-md-5">
                                         <input ngf-select accept="image/*" ng-model="picFile" class="form-control" type="file" name="img1" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
                                     </div>

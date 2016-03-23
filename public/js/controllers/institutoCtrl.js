@@ -6,7 +6,7 @@ angular.module('institutoCtrl', [])
 	$scope.institutoData = {};
 
 	//loadin variable to show the spining loading icon
-	$scope.loading = true;
+	//$scope.loading = true;
 
 	//get all institutoes first and bind it to the $scope.institutoes object
 	//use the funcion created in service
@@ -23,11 +23,29 @@ angular.module('institutoCtrl', [])
 		switch (mode) {
 			case 'create':
 				$scope.institutoData = {
-					'name_es' : '',
-					'name_en' : '',
-					'info_es' : '',
-					'info_en' : '',
-					'code' : ''};
+					'name' : '',
+					'desc_es' : '',
+					'desc_en' : '',
+					'location1' : '',
+					'coord1' : '',
+					'location2' : '',
+					'coord2' : '',
+					'location3' : '',
+					'coord3' : '',
+					'reasons_es' : '',
+					'reasons_en' : '',
+					'website' : '',
+					'tel' : '',
+					'campustour_es' : '',
+					'campustour_en' : '',
+					'programs_es' : '',
+					'programs_en' : '',
+					'accomm_es' : '',
+					'accomm_en' : '',
+					'activities_es' : '',
+					'activities_en' : '',
+					'price' : '',
+					'mail' : ''};
 				$scope.form_title = "Agregar instituto";
 				break;
 			case 'edit':

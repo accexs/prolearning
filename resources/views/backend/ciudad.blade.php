@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form name="ciudadForm" class="form-horizontal" novalidate="" ng-submit="submitCiudad(mode, id, picFile)" enctype="multipart/form-data">
+                    <form name="ciudadForm" class="form-horizontal" novalidate="" ng-submit="submitCiudad(mode, id, picFiles)" enctype="multipart/form-data">
                         <div class="row">
                                 <div class="form-group error">
                                     <label for="pais" class="col-md-4 control-label">Pais</label>
@@ -81,12 +81,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label class="col-md-4 control-label" for="img1">Imagen 1</label>
+                                    <label class="col-md-4 control-label" for="img">Imagen 1</label>
                                     <div class="col-md-5">
-                                        <input ngf-select accept="image/*" ng-model="picFile" class="form-control" type="file" name="img1" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
+                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
                                     </div>
                                     <div>
-                                        <img class="col-md-2" ngf-thumbnail="picFile" class="thumb">
+                                        <img class="col-md-2" ngf-thumbnail="picFiles[0]" class="thumb">
                                     </div>
                                 </div>
                             </div>

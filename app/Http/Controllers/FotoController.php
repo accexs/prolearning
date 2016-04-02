@@ -16,9 +16,9 @@ class FotoController extends Controller
     public function store(Request $request)
     {
     	//
-    	if ($request->hasFile('img1')) {
+    	if ($request->hasFile('img')) {
     		# code...
-    		$file = $request->file('img1');
+    		$file = $request->file('img');
     		$foto = new Foto;
     		$extension = $file->getClientOriginalExtension();
     		$filename = uniqid('img_') .'.'.$extension;

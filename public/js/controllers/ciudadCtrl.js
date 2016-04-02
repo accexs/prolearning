@@ -6,7 +6,8 @@ angular.module('ciudadCtrl', [])
 	$scope.ciudadData = {};
 	//object to hold weather data from openwather
 	$scope.weather = {};
-	
+	//array for images
+	$scope.picFiles = [];
 	//loadin variable to show the spining loading icon
 	//$scope.loading = true;
 
@@ -37,6 +38,7 @@ angular.module('ciudadCtrl', [])
 					'code' : '',
 					'pais' : ''};
 				delete $scope.selectedPais;
+				$scope.picFiles = [];
 				$scope.form_title = "Agregar ciudad";
 				break;
 			case 'edit':
@@ -70,8 +72,8 @@ angular.module('ciudadCtrl', [])
 								$scope.weather = data;
 								//$scope.loadingWeather = false;
 							});
-						//get photos
-						$scope.picFile = data.fotos[data.fotos.length-1].img
+						//get photos falta bucle for
+						$scope.picFiles[0] = data.fotos[data.fotos.length-1].img
 						//$scope.loading = false;
 					});
 				break;
@@ -84,7 +86,7 @@ angular.module('ciudadCtrl', [])
 
 	//function to handle submitting the form
 	//SAVE ciudad
-	$scope.submitCiudad = function(mode, id, img1) {
+	$scope.submitCiudad = function(mode, id, img) {
 		//$scope.loading = true;
 		//save ciudad pass comment data from the form
 		//use the function created in service
@@ -97,10 +99,13 @@ angular.module('ciudadCtrl', [])
 				}else{
 					//$scope.ciudadForm.$dirty = false;
 					//save picture if any
-					img1.upload = Upload.upload({
+					alert(JSON.stringify(img.length));
+					for (var i = img.length - 1; i >= 0; i--) {
+						img[i].upload = Upload.upload({
 						url: 'api/fotos',
-						data: {img1: img1,ciudad_id: data.ciudad_id}
-					});
+						data: {img: img[i],ciudad_id: data.ciudad_id}
+						});
+					}
 
 
 
@@ -120,6 +125,7 @@ angular.module('ciudadCtrl', [])
 	};
 
 	//upload img
+	/*
 	$scope.uploadPic = function(file) {
 		file.upload = Upload.upload({
 			url: 'api/upload',
@@ -138,6 +144,7 @@ angular.module('ciudadCtrl', [])
 		  file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
 		});
 	}
+	*/
 
 	//function to handle delete ciudad
 	$scope.deleteCiudad = function(id) {

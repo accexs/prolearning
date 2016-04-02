@@ -21,7 +21,6 @@ angular.module('ciudadCtrl', [])
 		});
 
 	$scope.modal = function(mode, id) {
-		$scope.picFile = '';
 		$scope.mode = mode;
 		$scope.errors = "";
 		Pais.get()
@@ -99,7 +98,6 @@ angular.module('ciudadCtrl', [])
 				}else{
 					//$scope.ciudadForm.$dirty = false;
 					//save picture if any
-					alert(JSON.stringify(img.length));
 					for (var i = img.length - 1; i >= 0; i--) {
 						img[i].upload = Upload.upload({
 						url: 'api/fotos',

@@ -83,7 +83,7 @@
                                 <div class="form-group error">
                                     <label class="col-md-4 control-label" for="img">Imagen 1</label>
                                     <div class="col-md-5">
-                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
+                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles" required>
                                     </div>
                                     <div>
                                         <img class="col-md-2" ngf-thumbnail="picFiles[0]" class="thumb">

@@ -20,7 +20,7 @@ class InstitutoController extends Controller
     public function index()
     {
         //
-        return response()->json(Instituto::all());
+        return response()->json(Instituto::with('fotos')->get());
     }
 
     /**
@@ -58,7 +58,7 @@ class InstitutoController extends Controller
                 $instituto -> name = $request->input('name');
                 $instituto -> desc_es = $request->input('desc_es');
                 $instituto -> desc_en = $request->input('desc_en');
-                $instituto -> logo = $request->input('logo');
+                //$instituto -> logo = $request->input('logo');
                 $instituto -> location1 = $request->input('location1');
                 $instituto -> coord1 = $request->input('coord1');
                 $instituto -> location2 = $request->input('location2');
@@ -77,11 +77,12 @@ class InstitutoController extends Controller
                 $instituto -> accomm_en = $request->input('accomm_en');
                 $instituto -> activities_es = $request->input('activities_es');
                 $instituto -> activities_en = $request->input('activities_en');
-                $instituto -> price = $request->input('prie');
+                $instituto -> price = $request->input('price');
                 $instituto -> mail = $request->input('mail');
                 Ciudad::find($request->input('ciudad'))->institutos() -> save($instituto);
 
-                return response()->json(['success' => true]);
+                return response()->json(['success' => true,
+                        'instituto_id' => $instituto->id]);
             }
         } catch (Exception $e){
             \Log::info('Error creating instituto');
@@ -98,7 +99,7 @@ class InstitutoController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Instituto::find($id));
+        return response()->json(Instituto::with('fotos')->find($id));
     }
 
     /**
@@ -138,7 +139,7 @@ class InstitutoController extends Controller
                 $instituto -> name = $request->input('name');
                 $instituto -> desc_es = $request->input('desc_es');
                 $instituto -> desc_en = $request->input('desc_en');
-                $instituto -> logo = $request->input('logo');
+                //$instituto -> logo = $request->input('logo');
                 $instituto -> location1 = $request->input('location1');
                 $instituto -> coord1 = $request->input('coord1');
                 $instituto -> location2 = $request->input('location2');
@@ -157,11 +158,12 @@ class InstitutoController extends Controller
                 $instituto -> accomm_en = $request->input('accomm_en');
                 $instituto -> activities_es = $request->input('activities_es');
                 $instituto -> activities_en = $request->input('activities_en');
-                $instituto -> price = $request->input('prie');
+                $instituto -> price = $request->input('price');
                 $instituto -> mail = $request->input('mail');
                 Ciudad::find($request->input('ciudad'))->institutos -> save($instituto);
 
-                return response()->json(['success' => true]);
+                return response()->json(['success' => true,
+                        'instituto_id' => $instituto->id]);
             }
         } catch (Exception $e){
             \Log::info('Error creating instituto');
@@ -178,6 +180,11 @@ class InstitutoController extends Controller
     public function destroy($id)
     {
         //
+        $fotos = Instituto::find($id)->fotos;
+        foreach ($fotos as $foto) {
+            # code...
+            \File::delete($foto->img);
+        }
         Instituto::destroy($id);
         return response()->json(['success' => true]);
     }

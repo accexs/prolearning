@@ -17,12 +17,14 @@ class CreateFotosTable extends Migration
             $table->string('img',100);
             $table->integer('pais_id')->unsigned()->nullable();
             $table->integer('ciudad_id')->unsigned()->nullable();
+            $table->integer('instituto_id')->unsigned()->nullable();
             $table->timestamps();
         });
 
         Schema::table('fotos', function($table){
             $table->foreign('pais_id')->references('id')->on('paises')->onDelete('cascade');
             $table->foreign('ciudad_id')->references('id')->on('ciudades')->onDelete('cascade');
+            $table->foreign('instituto_id')->references('id')->on('institutos')->onDelete('cascade');
         });
     }
 

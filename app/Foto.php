@@ -14,4 +14,9 @@ class Foto extends Model
     {
     	return $this->belongsTo('App\Ciudad');
     }
+
+    public function instituto()
+    {
+    	return $this->belongsTo('App\Instituto');
+    }
 }

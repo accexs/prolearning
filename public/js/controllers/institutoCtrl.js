@@ -1,10 +1,11 @@
 angular.module('institutoCtrl', [])
 
 // inject the instituto service into our controller
-.controller('institutoController', function($scope, $http, Instituto, Ciudad) {
+.controller('institutoController', function($scope, $http, Instituto, Ciudad, Upload, $timeout) {
 	//object to hold all the data for the new instituto form
 	$scope.institutoData = {};
-
+	//array for images
+	$scope.picFiles = [];
 	//loadin variable to show the spining loading icon
 	//$scope.loading = true;
 
@@ -52,6 +53,7 @@ angular.module('institutoCtrl', [])
 					'ciudad' : '',
 					'mail' : ''};
 				delete $scope.selectedCiudad;
+				$scope.picFiles = [];
 				$scope.form_title = "Agregar instituto";
 				break;
 			case 'edit':
@@ -61,6 +63,9 @@ angular.module('institutoCtrl', [])
 					.success(function(data) {
 						$scope.institutoData = data;
 						//$scope.loading = false;
+
+						//get photos falta bucle for
+						$scope.picFiles[0] = data.fotos[data.fotos.length-1].img
 					});
 				break;
 			default:
@@ -72,7 +77,7 @@ angular.module('institutoCtrl', [])
 
 	//function to handle submitting the form
 	//SAVE instituto
-	$scope.submitInstituto = function(mode, id) {
+	$scope.submitInstituto = function(mode, id, img) {
 		//$scope.loading = true;
 		//save instituto pass comment data from the form
 		//use the function created in service
@@ -83,6 +88,13 @@ angular.module('institutoCtrl', [])
 					//$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
+					for (var i = img.length - 1; i >= 0; i--) {
+						img[i].upload = Upload.upload({
+						url: 'api/fotos',
+						data: {img: img[i],instituto_id: data.instituto_id}
+						});
+					}
+
 					//$scope.institutoForm.$dirty = false;
 					//if successful, refresh instituto list
 					Instituto.get()
@@ -100,16 +112,16 @@ angular.module('institutoCtrl', [])
 	};
 
 	//function to handle delete instituto
-	$scope.deleteinstituto = function(id) {
+	$scope.deleteInstituto = function(id) {
 		//$scope.loading = true;
 		//use function created in service
 		Instituto.destroy(id)
 			.success(function(data){
 				//if successful refresh instituto list
-				instituto.get()
+				Instituto.get()
 					.success(function(getData){
 						$scope.institutos = getData;
-						$scope.loading = false;
+						//$scope.loading = false;
 					});
 			});
 	};

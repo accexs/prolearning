@@ -19,4 +19,9 @@ class Instituto extends Model
     {
         return $this->belongsTo('App\Ciudad');
     }
+
+    public function fotos()
+    {
+        return $this->hasMany('App\Foto');
+    }
 }

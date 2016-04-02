@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form name="institutoForm" class="form-horizontal" novalidate="" ng-submit="submitInstituto(mode, id, picFile)" enctype="multipart/form-data">
+                    <form name="institutoForm" class="form-horizontal" novalidate="" ng-submit="submitInstituto(mode, id, picFiles)" enctype="multipart/form-data">
                         <div class="row">
                                 <div class="form-group error">
                                     <label for="ciudad" class="col-md-4 control-label">Ciudad</label>
@@ -101,13 +101,111 @@
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label class="col-md-4 control-label" for="img1">Logo</label>
+                                    <label class="col-md-4 control-label" for="img">Logo</label>
                                     <div class="col-md-5">
-                                        <input ngf-select accept="image/*" ng-model="picFile" class="form-control" type="file" name="img1" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
+                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
                                     </div>
                                     <div>
-                                        <img class="col-md-2" ngf-thumbnail="picFile" class="thumb">
+                                        <img class="col-md-2" ngf-thumbnail="picFiles[0]" class="thumb">
                                     </div>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="reasons_es" class="col-md-4 control-label">Razones español</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="reasons_es" value=" <% reasons_es %> " ng-model="institutoData.reasons_es" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.reasons_es.$invalid" class="help-inline">Razones requerida.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="reasons_en" class="col-md-4 control-label">Razones inglés</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="reasons_en" value=" <% reasons_en %> " ng-model="institutoData.reasons_en" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.reasons_en.$invalid" class="help-inline">Razones requerida.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="website" class="col-md-4 control-label">Website</label>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="website" value=" <% website %> " ng-model="institutoData.website" required>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.website.$invalid" class="help-inline">Website requerido.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="tel" class="col-md-4 control-label">Teléfono</label>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="tel" value=" <% tel %> " ng-model="institutoData.tel" required>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.tel.$invalid" class="help-inline">Teléfono requerido.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="campustour_es" class="col-md-4 control-label">Campus Tour español</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="campustour_es" value=" <% campustour_es %> " ng-model="institutoData.campustour_es" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.campustour_es.$invalid" class="help-inline">Campus Tour requerido.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="campustour_en" class="col-md-4 control-label">Campus Tour inglés</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="campustour_en" value=" <% campustour_en %> " ng-model="institutoData.campustour_en" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.campustour_en.$invalid" class="help-inline">Campus Tour requerido.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="programs_es" class="col-md-4 control-label">Programas español</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="programs_es" value=" <% programs_es %> " ng-model="institutoData.programs_es" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.programs_es.$invalid" class="help-inline">Programas requeridos.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="programs_en" class="col-md-4 control-label">Programas inglés</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="programs_en" value=" <% programs_en %> " ng-model="institutoData.programs_en" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.programs_en.$invalid" class="help-inline">Programas requeridos.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="accomm_es" class="col-md-4 control-label">Alojamiento y estadía español</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="accomm_es" value=" <% accomm_es %> " ng-model="institutoData.accomm_es" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.accomm_es.$invalid" class="help-inline">Alojamiento y estadía requeridos.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="accomm_en" class="col-md-4 control-label">Alojamiento y estadía inglés</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="accomm_en" value=" <% accomm_en %> " ng-model="institutoData.accomm_en" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.accomm_en.$invalid" class="help-inline">Alojamiento y estadía requeridos.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="activities_es" class="col-md-4 control-label">Actividades extra español</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="activities_es" value=" <% activities_es %> " ng-model="institutoData.activities_es" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.activities_es.$invalid" class="help-inline">Actividades extra requeridas.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="activities_en" class="col-md-4 control-label">Actividades extra inglés</label>
+                                <div class="col-md-6">
+                                    <textarea ui-tinymce class="form-control" type="text" name="activities_en" value=" <% activities_en %> " ng-model="institutoData.activities_en" required></textarea>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.activities_en.$invalid" class="help-inline">Actividades extra requeridas.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="price" class="col-md-4 control-label">Precio</label>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="price" value=" <% price %> " ng-model="institutoData.price" required>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.price.$invalid" class="help-inline">Precio requerido.</p>
+                                </div>
+                            </div>
+                            <div class="form-group error">
+                                <label for="mail" class="col-md-4 control-label">Email</label>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="email" name="mail" value=" <% mail %> " ng-model="institutoData.mail" required>
+                                    <p class="col-md-offset-3" ng-show="institutoForm.mail.$invalid" class="help-inline">Email requerido.</p>
                                 </div>
                             </div>
                             <div ng-repeat="error in errors" class=" col-md-4">

@@ -38,31 +38,21 @@ Route::group(['middleware' => ['web']], function () {
         Route::post('fotos', 'FotoController@store');
 
     	//paises
-    	Route::resource('paises', 'PaisController',array(
-    		'only' => array('index','show', 'store', 'destroy')));
-    	Route::post('paises/{id}', 'PaisController@update');
+    	Route::resource('paises', 'PaisController');
 
         //ciudades
         Route::resource('ciudades', 'CiudadController');
-        //Route::post('ciudades/{id}', 'CiudadController@update');
 
         //institutos
-        Route::resource('institutos', 'InstitutoController',array(
-            'only' => array('index', 'show', 'store', 'destroy'))
-        );
-        Route::post('institutos/{id}', 'InstitutoController@update');
+        Route::resource('institutos', 'InstitutoController'/*,array(
+            'only' => array('index', 'show', 'store', 'destroy'))*/);
+        //Route::post('institutos/{id}', 'InstitutoController@update');
 
         //programas
-        Route::resource('programas', 'ProgramaController',array(
-            'only' => array('index', 'show', 'store', 'destroy'))
-        );
-        Route::post('programas/{id}', 'ProgramaController@update');
+        Route::resource('programas', 'ProgramaController');
 
         //cursos
-        Route::resource('cursos', 'CursoController',array(
-            'only' => array('index', 'show', 'store', 'destroy'))
-        );
-        Route::post('cursosos/{id}', 'CursoController@update');
+        Route::resource('cursos', 'CursoController');
     });
 
     Route::get('pais','PlappController@pais');

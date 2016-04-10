@@ -86,7 +86,7 @@ class InstitutoController extends Controller
             }
         } catch (Exception $e){
             \Log::info('Error creating instituto');
-            return response()->json(['success' => false], 500);
+            return response()->json(['success' => false]);
         }
     }
 
@@ -160,14 +160,24 @@ class InstitutoController extends Controller
                 $instituto -> activities_en = $request->input('activities_en');
                 $instituto -> price = $request->input('price');
                 $instituto -> mail = $request->input('mail');
-                Ciudad::find($request->input('ciudad'))->institutos -> save($instituto);
+
+                if ($request->input('fotos')) {
+                    # code...
+                    foreach ($instituto->fotos as $foto) {
+                        # code...
+                        \File::delete($foto->img);
+                    }
+                }
+
+                // save instituto and relationship
+                Ciudad::find($request->input('ciudad'))->institutos() -> save($instituto);
 
                 return response()->json(['success' => true,
                         'instituto_id' => $instituto->id]);
             }
         } catch (Exception $e){
             \Log::info('Error creating instituto');
-            return response()->json(['success' => false], 500);
+            return response()->json(['success' => false]);
         }
     }
 

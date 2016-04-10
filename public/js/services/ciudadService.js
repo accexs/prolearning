@@ -14,11 +14,13 @@ angular.module('ciudadService', [])
 		save : function(mode , ciudadData, id) {
 			if (mode == 'edit') {
 				url = 'api/ciudades/' + ciudadData.id;
+				method = 'PUT'; 
 			}else{
+				method = 'POST';
 				url = 'api/ciudades';
 			}
 			return $http({
-				method: 'POST',
+				method: method,
 				url: url,
 				headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
 				data: $.param(ciudadData)

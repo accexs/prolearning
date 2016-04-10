@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"ciuda",
+				"ciudad_id"
+			],
+			[
+				"ins",
+				"instituto_id"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"pic",
+				"picFiles"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
 				"ciu",
 				"ciudad"
 			],
@@ -34,10 +54,6 @@
 			[
 				"max",
 				"max-width"
-			],
-			[
-				"pic",
-				"picFile"
 			],
 			[
 				"file",
@@ -104,10 +120,6 @@
 				"activities_es"
 			],
 			[
-				"ins",
-				"$instituto〔variable〕"
-			],
-			[
 				"res",
 				"response"
 			],
@@ -158,10 +170,6 @@
 			[
 				"cur",
 				"cursos"
-			],
-			[
-				"ciuda",
-				"ciudades"
 			],
 			[
 				"cu",
@@ -332,10 +340,6 @@
 				"$reporte〔variable〕"
 			],
 			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
 				"tabla",
 				"tabla_reportes"
 			],
@@ -398,10 +402,6 @@
 			[
 				"cr",
 				"crearusuario"
-			],
-			[
-				"req",
-				"$request〔variable〕"
 			],
 			[
 				"A",
@@ -523,23 +523,15 @@
 			"file": "resources/views/backend/ciudad.blade.php",
 			"settings":
 			{
-				"buffer_size": 7461,
+				"buffer_size": 7477,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/PaisController.php",
+			"file": "/home/accexs/.homestead/Homestead.yaml",
 			"settings":
 			{
-				"buffer_size": 3581,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/accexs/Projects/laravel-angular-comment-app-master/app/config/database.php",
-			"settings":
-			{
-				"buffer_size": 3358,
+				"buffer_size": 773,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,15 +555,7 @@
 			"file": "app/Http/Controllers/InstitutoController.php",
 			"settings":
 			{
-				"buffer_size": 6720,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/services/ciudadService.js",
-			"settings":
-			{
-				"buffer_size": 708,
+				"buffer_size": 7025,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +563,7 @@
 			"file": "app/Http/Controllers/FotoController.php",
 			"settings":
 			{
-				"buffer_size": 1196,
+				"buffer_size": 1402,
 				"line_ending": "Unix"
 			}
 		},
@@ -611,7 +595,15 @@
 			"file": "public/js/controllers/institutoCtrl.js",
 			"settings":
 			{
-				"buffer_size": 2945,
+				"buffer_size": 3324,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/services/ciudadService.js",
+			"settings":
+			{
+				"buffer_size": 708,
 				"line_ending": "Unix"
 			}
 		},
@@ -627,7 +619,7 @@
 			"file": "public/js/controllers/ciudadCtrl.js",
 			"settings":
 			{
-				"buffer_size": 4208,
+				"buffer_size": 4340,
 				"line_ending": "Unix"
 			}
 		},
@@ -651,23 +643,7 @@
 			"file": "resources/views/backend/instituto.blade.php",
 			"settings":
 			{
-				"buffer_size": 9444,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/controllers/paisCtrl.js",
-			"settings":
-			{
-				"buffer_size": 2115,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/backend/pais.blade.php",
-			"settings":
-			{
-				"buffer_size": 3514,
+				"buffer_size": 18366,
 				"line_ending": "Unix"
 			}
 		},
@@ -675,15 +651,15 @@
 			"file": "app/Instituto.php",
 			"settings":
 			{
-				"buffer_size": 643,
+				"buffer_size": 727,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/js/services/paisService.js",
+			"file": "app/Foto.php",
 			"settings":
 			{
-				"buffer_size": 680,
+				"buffer_size": 345,
 				"line_ending": "Unix"
 			}
 		},
@@ -785,12 +761,21 @@
 	},
 	"file_history":
 	[
+		"/home/accexs/.homestead/Homestead.yaml",
+		"/home/accexs/Projects/prolearning.local/public/js/services/paisService.js",
+		"/home/accexs/Projects/prolearning.local/resources/views/backend/pais.blade.php",
+		"/home/accexs/Projects/prolearning.local/public/js/controllers/paisCtrl.js",
+		"/home/accexs/Projects/laravel-angular-comment-app-master/app/config/database.php",
+		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/PaisController.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_25_222229_create_fotos_table.php",
+		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_025448_create_institutos_table.php",
+		"/tmp/sublime-sftp-browse-1459552404/prolearning.com.ve/prolearning.com.ve/htdocs/contacto.php",
+		"/tmp/sublime-sftp-browse-1459484007/prolearning.com.ve/prolearning.com.ve/htdocs/contacto.php",
 		"/home/accexs/Dropbox/MEGA-MASTERKEY.txt",
 		"/home/accexs/Projects/prolearning.local/resources/views/backend/index.blade.php",
 		"/home/accexs/Projects/prolearning.local/public/js/controllers/ciudadCtrl.js",
 		"/home/accexs/Projects/prolearning.local/public/js/services/weatherService.js",
 		"/home/accexs/Projects/rafat.local/app/controllers/HorarioController.php",
-		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_25_222229_create_fotos_table.php",
 		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/UploadController.php",
 		"/tmp/fz3temp-1/index.html",
 		"/tmp/sublime-sftp-browse-1456877874/prolearning.com.ve/prolearning.com.ve/htdocs/estilos.css",
@@ -852,10 +837,8 @@
 		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/VerifyCsrfToken.php",
 		"/home/accexs/Projects/prolearning.local/resources/views/home.blade.php",
 		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/Auth/AuthController.php",
-		"/home/accexs/Projects/prolearning.local/resources/views/backend/pais.blade.php",
 		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_024903_create_paises_table.php",
 		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_024923_create_ciudades_table.php",
-		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_025448_create_institutos_table.php",
 		"/home/accexs/Projects/prolearning.local/database/migrations/2016_02_09_030140_create_programas_table.php",
 		"/home/accexs/Projects/prolearning.local/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/home/accexs/Projects/prolearning.local/config/app.php",
@@ -875,7 +858,6 @@
 		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/Authenticate.php",
 		"/home/accexs/Projects/prolearning.local/app/Http/Middleware/RedirectIfAuthenticated.php",
 		"/home/accexs/Projects/prolearning.local/app/Http/Controllers/Controller.php",
-		"/home/accexs/.homestead/Homestead.yaml",
 		"/home/accexs/Projects/october.local/install-master/index.php",
 		"/home/accexs/Projects/october.local/install-master/install_files/install.log",
 		"/home/accexs/.cache/.fr-xpdKfn/install-master/README.md",
@@ -906,13 +888,7 @@
 		"/home/accexs/Desktop/htdocs/index.php",
 		"/home/accexs/Desktop/naturarte/app/Http/Requests/Auth/LoginRequest.php",
 		"/home/accexs/Desktop/naturarte/resources/views/administrador/mastera.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/usuario/crearpedido.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/usuario/listpedido.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/administrador/editusuario.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/administrador/empresas.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/administrador/usuario.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/administrador/generar.blade.php",
-		"/home/accexs/Desktop/naturarte/resources/views/administrador/reporte.blade.php"
+		"/home/accexs/Desktop/naturarte/resources/views/usuario/crearpedido.blade.php"
 	],
 	"find":
 	{
@@ -930,6 +906,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"website",
+			"Website",
+			"website",
+			"Website",
+			"Programas",
+			"programs",
+			"Razones",
+			"reasons",
+			"coord3",
 			"loading",
 			"campustour_es",
 			"ciudad",
@@ -1055,7 +1040,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1064,15 +1049,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7461,
+						"buffer_size": 7477,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								673,
-								673
+								7074,
+								7074
 							]
 						],
 						"settings":
@@ -1087,83 +1072,47 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/PaisController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3581,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								68,
-								68
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1020.0,
+						"translation.y": 3009.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/home/accexs/Projects/laravel-angular-comment-app-master/app/config/database.php",
+					"buffer": 1,
+					"file": "/home/accexs/.homestead/Homestead.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3358,
+						"buffer_size": 773,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1743,
-								1743
+								506,
+								506
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1071.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/Http/Kernel.php",
 					"semi_transient": false,
 					"settings":
@@ -1194,11 +1143,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "app/Pais.php",
 					"semi_transient": false,
 					"settings":
@@ -1227,24 +1176,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/Http/Controllers/InstitutoController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6720,
+						"buffer_size": 7025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2582,
-								2582
+								3181,
+								3181
 							]
 						],
 						"settings":
@@ -1259,14 +1208,182 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1530.0,
+						"translation.y": 1632.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Controllers/FotoController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1231,
+								1231
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "app/Ciudad.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/js/services/institutoService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/js/controllers/institutoCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2393,
+								2393
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 10,
 					"file": "public/js/services/ciudadService.js",
 					"semi_transient": false,
 					"settings":
@@ -1296,179 +1413,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/Http/Controllers/FotoController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1196,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1092,
-								1092
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/Ciudad.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "public/js/services/institutoService.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 747,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 11,
-					"file": "public/js/controllers/institutoCtrl.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2945,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1983,
-								1983
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1122.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 12,
 					"file": "app/Http/Controllers/CiudadController.php",
 					"semi_transient": false,
 					"settings":
@@ -1480,8 +1429,8 @@
 						"selection":
 						[
 							[
-								3426,
-								3426
+								3736,
+								3736
 							]
 						],
 						"settings":
@@ -1496,27 +1445,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 714.0,
+						"translation.y": 2040.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 12,
 					"file": "public/js/controllers/ciudadCtrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4208,
+						"buffer_size": 4340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1136,
-								1136
+								2330,
+								2330
 							]
 						],
 						"settings":
@@ -1530,14 +1479,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1224.0,
+						"translation.y": 1615.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "app/Http/routes.php",
 					"semi_transient": false,
 					"settings":
@@ -1565,14 +1514,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 663.0,
+						"translation.y": 680.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "app/Http/Controllers/PlappController.php",
 					"semi_transient": false,
 					"settings":
@@ -1601,24 +1550,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "resources/views/backend/instituto.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9444,
+						"buffer_size": 18366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1925,
-								1925
+								8609,
+								8609
 							]
 						],
 						"settings":
@@ -1632,102 +1581,65 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 4386.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "public/js/controllers/paisCtrl.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								487,
-								487
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "resources/views/backend/pais.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2511,
-								2511
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 690.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
+					"buffer": 16,
 					"file": "app/Instituto.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 643,
+						"buffer_size": 727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								724,
+								724
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/Foto.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -1741,41 +1653,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
-					"file": "public/js/services/paisService.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								680,
-								680
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
+					"buffer": 18,
 					"file": "public/js/app.js",
 					"semi_transient": false,
 					"settings":
@@ -1805,11 +1683,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 19,
 					"file": "resources/views/layouts/app.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -1840,7 +1718,7 @@
 						"translation.y": 2091.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -1934,7 +1812,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

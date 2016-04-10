@@ -66,7 +66,7 @@ class CiudadController extends Controller
             }
         } catch (Exception $e) {
             \Log::info('Error creating ciudad: '.$e);
-            return response()->json(['success' => false], 500);
+            return response()->json(['success' => false]);
         }
     }
 
@@ -110,8 +110,7 @@ class CiudadController extends Controller
                 # code...
                 return response()->json([
                     'success' => false,
-                    'errors' => $validator->errors()->all(),
-                    'code' => 400
+                    'errors' => $validator->errors()->all()
                     ]);
             }else{
                 $ciudad = Ciudad::find($id);
@@ -125,13 +124,25 @@ class CiudadController extends Controller
                     # code...
                     \File::delete($foto->img);
                 }
+                /*foreach ($fotos as $foto) {
+                    # code...
+                    foreach ($request->input('fotos') as $tmpfoto) {
+                        # code...
+                        //return $tmpfoto['img']." contra ".$foto->img;
+                        if ($foto->img != $tmpfoto['img'] ) {
+                            # code...
+                            $foto->img = $tmpfoto['img'];
+                        }
+                    }
+                }*/
                 Pais::find($request->input('pais_id'))->ciudades() -> save($ciudad);
                 return response()->json(['success' => true,
-                        'ciudad_id' => $ciudad -> id]);
+                        'ciudad_id' => $ciudad -> id,
+                        'fotos' => $fotos]);
             }
         } catch (Exception $e) {
             \Log::info('Error editing ciudad: '.$e);
-            return response()->json(['success' => false], 500);
+            return response()->json(['success' => false]);
         }
     }
 

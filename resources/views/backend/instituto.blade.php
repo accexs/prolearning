@@ -34,7 +34,7 @@
                                         <select class="form-control" name="ciudad" ng-model="selectedCiudad" ng-options="ciudad.name_es for ciudad in ciudades track by ciudad.id" required>
                                         <option value="">Seleccione ciudad</option>
                                         </select>
-                                        <p class="col-md-offset-3" ng-show="institutoForm.pais.$error.required" class="help-inline">Pais es requerido.</p>
+                                        <p class="col-md-offset-3" ng-show="institutoForm.pais.$error.required" class="help-inline">Ciudad es requerido.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">
@@ -103,10 +103,10 @@
                                 <div class="form-group error">
                                     <label class="col-md-4 control-label" for="img">Logo</label>
                                     <div class="col-md-5">
-                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles">
+                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles" ng-required="!thumb">
                                     </div>
                                     <div>
-                                        <img class="col-md-2" ngf-thumbnail="picFiles[0]" class="thumb">
+                                        <img class="col-md-2" ngf-thumbnail="thumb" class="thumb">
                                     </div>
                                 </div>
                             </div>

@@ -43,10 +43,8 @@ Route::group(['middleware' => ['web']], function () {
     	Route::post('paises/{id}', 'PaisController@update');
 
         //ciudades
-        Route::resource('ciudades', 'CiudadController',array(
-            'only' => array('index', 'show', 'store', 'destroy'))
-        );
-        Route::post('ciudades/{id}', 'CiudadController@update');
+        Route::resource('ciudades', 'CiudadController');
+        //Route::post('ciudades/{id}', 'CiudadController@update');
 
         //institutos
         Route::resource('institutos', 'InstitutoController',array(

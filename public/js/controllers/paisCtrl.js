@@ -14,7 +14,6 @@ angular.module('paisCtrl', [])
 	Pais.get()
 		.success(function(data) {
 			$scope.paises = data;
-			//$scope.loading = false;
 		});
 
 	$scope.modal = function(mode, id) {

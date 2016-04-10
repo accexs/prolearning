@@ -6,8 +6,6 @@ angular.module('institutoCtrl', [])
 	$scope.institutoData = {};
 	//array for images
 	$scope.picFiles = [];
-	//loadin variable to show the spining loading icon
-	//$scope.loading = true;
 
 	//get all institutoes first and bind it to the $scope.institutoes object
 	//use the funcion created in service
@@ -15,7 +13,6 @@ angular.module('institutoCtrl', [])
 	Instituto.get()
 		.success(function(data) {
 			$scope.institutos = data;
-			//$scope.loading = false;
 		});
 
 	$scope.modal = function(mode, id) {
@@ -62,10 +59,12 @@ angular.module('institutoCtrl', [])
 				Instituto.show(id)
 					.success(function(data) {
 						$scope.institutoData = data;
-						//$scope.loading = false;
-
+						Ciudad.show(data.ciudad_id)
+							.success(function(getData){
+								$scope.selectedCiudad = getData;
+							});
 						//get photos falta bucle for
-						$scope.picFiles[0] = data.fotos[data.fotos.length-1].img
+						$scope.thumb = data.fotos[data.fotos.length-1].img
 					});
 				break;
 			default:
@@ -78,7 +77,6 @@ angular.module('institutoCtrl', [])
 	//function to handle submitting the form
 	//SAVE instituto
 	$scope.submitInstituto = function(mode, id, img) {
-		//$scope.loading = true;
 		//save instituto pass comment data from the form
 		//use the function created in service
 		$scope.institutoData.ciudad = $scope.selectedCiudad.id;
@@ -121,7 +119,6 @@ angular.module('institutoCtrl', [])
 				Instituto.get()
 					.success(function(getData){
 						$scope.institutos = getData;
-						//$scope.loading = false;
 					});
 			});
 	};

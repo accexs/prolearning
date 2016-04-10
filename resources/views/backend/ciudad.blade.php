@@ -49,7 +49,7 @@
                                     <label for="name_en" class="col-md-4 control-label">Nombre ingles</label>
                                     <div class="col-md-4">
                                         <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="ciudadData.name_en" required>
-                                        <p class="col-md-offset-3" ng-show="ciudadForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>    
+                                        <p class="col-md-offset-3" ng-show="ciudadForm.name_en.$invalid"><small>Nombre es requerido</small></p>    
                                     </div>
                                 </div>
                                 <div class="form-group error">
@@ -83,10 +83,10 @@
                                 <div class="form-group error">
                                     <label class="col-md-4 control-label" for="img">Imagen 1</label>
                                     <div class="col-md-5">
-                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles" required>
+                                        <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles" ng-required="!thumb">
                                     </div>
                                     <div>
-                                        <img class="col-md-2" ngf-thumbnail="picFiles[0]" class="thumb">
+                                        <img class="col-md-2" ngf-thumbnail="thumb" class="thumb">
                                     </div>
                                 </div>
                             </div>

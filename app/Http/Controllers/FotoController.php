@@ -12,7 +12,23 @@ use Validator;
 
 class FotoController extends Controller
 {
-    //
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+        return response()->json(Instituto::with('fotos')->get());
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
     	//
@@ -46,10 +62,56 @@ class FotoController extends Controller
     		}
     		
     	}else{
-    		return response()->json(['success' => false]);
+    		return response()->json(['success' => false, 'error' => 'no file']);
     	}
     	
+    }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+        return response()->json(Foto::find($id));
+    }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     *Removes the specified resource from storage.
+     * 
+     * @param  collection $fotos
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+        \File::delete(Foto::find($id)->img);
+        return response()->json(['success' => true]);
     }
 }

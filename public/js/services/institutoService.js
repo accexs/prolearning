@@ -13,7 +13,7 @@ angular.module('institutoService', [])
 		//save instituto (institutoData)
 		save : function(mode , institutoData, id) {
 			if (mode == 'edit') {
-				url = 'api/institutos' + institutoData.id;
+				url = 'api/institutos/' + institutoData.id;
 			}else{
 				url = 'api/institutos';
 			}

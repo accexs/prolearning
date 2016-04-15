@@ -9,7 +9,8 @@ var plApp = angular.module('plApp',
 		'ciudadService',
 		'institutoCtrl',
 		'institutoService',
-		'weatherService'
+		'weatherService',
+		'datatables'
 		],
 		function($interpolateProvider){
 			$interpolateProvider.startSymbol('<%');

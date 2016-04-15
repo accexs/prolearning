@@ -39,7 +39,7 @@ angular.module('paisCtrl', [])
 				break;
 		}
 		console.log();
-		$('#myModal').modal('show');
+		$('#paisModal').modal('show');
 	}
 
 	//function to handle submitting the form
@@ -60,7 +60,7 @@ angular.module('paisCtrl', [])
 						.success(function(getData) {
 							$scope.paises = getData;
 							//$scope.loading = false;
-							$('#myModal').modal('hide');
+							$('#paisModal').modal('hide');
 						});
 				}
 			})

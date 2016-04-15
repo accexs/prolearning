@@ -1,7 +1,7 @@
 angular.module('ciudadCtrl', [])
 
 // inject the ciudad service into our controller
-.controller('ciudadController', function($scope, $http, Ciudad, Weather, Pais, Upload, $timeout) {
+.controller('ciudadController', function($scope, $http, Ciudad, Weather, Pais, Upload, $timeout, cfpLoadingBar) {
 	//object to hold all the data for the new ciudad form
 	$scope.ciudadData = {};
 	//object to hold weather data from openwather
@@ -10,7 +10,7 @@ angular.module('ciudadCtrl', [])
 	$scope.picFiles = [];
 	//array for thumbnails
 	$scope.thumb = [];
-	//loadin variable to show the spining loading icon
+
 
 	//get all ciudades first and bind it to the $scope.ciudades object
 	//use the funcion created in service
@@ -78,7 +78,7 @@ angular.module('ciudadCtrl', [])
 				break;
 		}
 		console.log();
-		$('#myModal').modal('show');
+		$('#ciudadModal').modal('show');
 	}
 
 	//function to handle submitting the form
@@ -106,7 +106,7 @@ angular.module('ciudadCtrl', [])
 					Ciudad.get()
 						.success(function(getData) {
 							$scope.ciudades = getData;
-							$('#myModal').modal('hide');
+							$('#ciudadModal').modal('hide');
 						});
 				}
 			})

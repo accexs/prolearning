@@ -14,11 +14,13 @@ angular.module('institutoService', [])
 		save : function(mode , institutoData, id) {
 			if (mode == 'edit') {
 				url = 'api/institutos/' + institutoData.id;
+				method = 'PUT';
 			}else{
 				url = 'api/institutos';
+				method = 'POST'
 			}
 			return $http({
-				method: 'POST',
+				method: method,
 				url: url,
 				headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
 				data: $.param(institutoData)

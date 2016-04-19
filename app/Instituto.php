@@ -25,8 +25,5 @@ class Instituto extends Model
         return $this->hasMany('App\Foto');
     }
 
-    public function programas()
-    {
-        return $this->hasMany('App\Programa');
-    }
+    
 }

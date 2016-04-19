@@ -6,6 +6,10 @@ angular.module('institutoService', [])
 		get : function(){
 			return $http.get('api/institutos');
 		},
+		//get all institutos for a ciudad
+		getByCiudad : function(id){
+			return $http.get('api/institutos/ciudad/' + id);
+		},
 		//show instituto by id
 		show : function(id){
 			return $http.get('api/institutos/' + id);

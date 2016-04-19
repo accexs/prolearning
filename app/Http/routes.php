@@ -47,6 +47,8 @@ Route::group(['middleware' => ['web']], function () {
         Route::resource('institutos', 'InstitutoController'/*,array(
             'only' => array('index', 'show', 'store', 'destroy'))*/);
         //Route::post('institutos/{id}', 'InstitutoController@update');
+        
+        Route::get('institutos/ciudad/{id}', 'InstitutoController@indexByCiudad');
 
         //programas
         Route::resource('programas', 'ProgramaController');

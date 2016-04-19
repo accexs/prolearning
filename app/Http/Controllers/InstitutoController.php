@@ -24,6 +24,17 @@ class InstitutoController extends Controller
     }
 
     /**
+     * Display a list of resource based on relationship.
+     *
+     * @param  int  $id (ciudad)
+     * @return \Illuminate\Http\Response
+     */    
+    public function indexByCiudad($id){
+        //
+        return response()->json(Ciudad::find($id)->institutos);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

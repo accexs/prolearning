@@ -18,12 +18,12 @@ angular.module('institutoCtrl', [])
 	$scope.modal = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
-		Ciudad.get()
-			.success(function(getData){
-				$scope.ciudades = getData;
-			});
 		switch (mode) {
 			case 'create':
+				Ciudad.get()
+					.success(function(getData){
+						$scope.ciudades = getData;
+					});
 				$scope.institutoData = {
 					'name' : '',
 					'desc_es' : '',
@@ -98,7 +98,6 @@ angular.module('institutoCtrl', [])
 					Instituto.get()
 						.success(function(getData) {
 							$scope.institutos = getData;
-							$scope.loading = false;
 							$('#myModal').modal('hide');
 						});
 				}

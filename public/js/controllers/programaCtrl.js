@@ -1,25 +1,37 @@
 angular.module('programaCtrl', [])
 
 // inject the programa service into our controller
-.controller('programaController', function($scope, $http, programa) {
+.controller('programaController', function($scope, $http, Programa, Ciudad, Instituto) {
 	//object to hold all the data for the new programa form
 	$scope.programaData = {};
 
-	//loadin variable to show the spining loading icon
-	$scope.loading = true;
-
 	//get all programaes first and bind it to the $scope.programaes object
 	//use the funcion created in service
-	//GET ALL programaES
-	programa.get()
+	//GET ALL programas
+	Programa.get($)
 		.success(function(data) {
 			$scope.programas = data;
-			$scope.loading = false;
 		});
+
+	
 
 	$scope.modal = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
+		//get ciudades
+		Ciudad.get()
+			.success(function(getData){
+				$scope.ciudades = getData;
+			});
+		//watch selectedCiudad value to get institutos
+		$scope.$watch('selectedCiudad', function(value){
+			if (value) {
+				Instituto.getByCiudad(value.id)
+					.success(function(getData){
+						$scope.institutos = getData;
+					});
+			}
+		});
 		switch (mode) {
 			case 'create':
 				$scope.programaData = {
@@ -28,43 +40,40 @@ angular.module('programaCtrl', [])
 					'info_es' : '',
 					'info_en' : '',
 					'code' : ''};
+				//delete $scope.selectedCiudad;
 				$scope.form_title = "Agregar programa";
 				break;
 			case 'edit':
 				$scope.form_title = "Editar programa";
 				$scope.id = id;
-				programa.show(id)
+				Programa.show(id)
 					.success(function(data) {
 						$scope.programaData = data;
-						$scope.loading = false;
 					});
 				break;
 			default:
 				break;
 		}
 		console.log(id);
-		$('#myModal').modal('show');
+		$('#programaModal').modal('show');
 	}
 
 	//function to handle submitting the form
 	//SAVE programa
-	$scope.submitprograma = function(mode, id) {
-		$scope.loading = true;
+	$scope.submitPrograma = function(mode, id) {
 		//save programa pass comment data from the form
 		//use the function created in service
-		programa.save(mode, $scope.programaData, id)
+		Programa.save(mode, $scope.programaData, id)
 			.success(function(data) {
 				if (data.code == 400) {
-					$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
 					//$scope.programaForm.$dirty = false;
 					//if successful, refresh programa list
-					programa.get()
+					Programa.get()
 						.success(function(getData) {
 							$scope.programas = getData;
-							$scope.loading = false;
-							$('#myModal').modal('hide');
+							$('#programaModal').modal('hide');
 						});
 				}
 			})
@@ -75,16 +84,14 @@ angular.module('programaCtrl', [])
 	};
 
 	//function to handle delete programa
-	$scope.deleteprograma = function(id) {
-		$scope.loading = true;
+	$scope.deletePrograma = function(id) {
 		//use function created in service
-		programa.destroy(id)
+		Programa.destroy(id)
 			.success(function(data){
 				//if successful refresh programa list
-				programa.get()
+				Programa.get()
 					.success(function(getData){
 						$scope.programas = getData;
-						$scope.loading = false;
 					});
 			});
 	};

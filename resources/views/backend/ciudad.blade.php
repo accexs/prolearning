@@ -174,7 +174,7 @@
                                 </div>
                                 <div class="form-group error">
                                     <label for="" class="col-md-4 control-label">Actual</label>
-                                    <img class="col-md-3" ngf-thumbnail="thumb" class="thumb">
+                                    <img class="col-md-3 thumb" ngf-thumbnail="thumb">
                                 </div>
                             </div>
                             <div class="modal-footer">

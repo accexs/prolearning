@@ -14,7 +14,16 @@ class CreateProgramasTable extends Migration
     {
         Schema::create('programas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name_es',100);
+            $table->string('name_en',100);
+            $table->integer('instituto_id')->unsigned();
+            $table->integer('tipo_id')->unsigned();
             $table->timestamps();
+        });
+
+        Schema::table('programas', function($table){
+            $table->foreign('instituto_id')->references('id')->on('institutos')->onDelete('cascade');
+            $table->foreign('tipo_id')->references('id')->on('tipos')->onDelete('cascade');
         });
     }
 

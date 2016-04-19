@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Prolearling</title>
+    <title>Prolearning</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -50,7 +50,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Prolearling
+                    Prolearning
                 </a>
             </div>
 
@@ -58,8 +58,8 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}" title="">Usuarios</a></li>
-                    <li><a href="{{ url('/') }}" title="">Paises y Ciudades</a></li>
+                    <li><a href="{{ url('/ciudad') }}" title="">Paises y Ciudades</a></li>
+                    <li><a href="{{ url('/instituto') }}" title="">Institutos</a></li>
                     <li><a href="{{ url('/') }}" title="">Programas y Cursos</a></li>
                     <li><a href="{{ url('/') }}" title="">Promociones</a></li>
                     <li><a href="{{ url('/') }}" title="">Testimionios</a></li>

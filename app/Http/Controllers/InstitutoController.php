@@ -61,8 +61,7 @@ class InstitutoController extends Controller
                 # code...
                 return response()->json([
                     'success' => false,
-                    'errors' => $validator->errors()->all(),
-                    'code' => 400
+                    'errors' => $validator->errors()->all()
                     ]);
             }else{
                 $instituto = new Instituto;

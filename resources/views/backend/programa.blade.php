@@ -4,7 +4,7 @@
 <div class="container" ng-app="plApp">
     <div class="row">
         <!--programas-->
-        <div class="" ng-controller="programaController">
+        <div class="col-md-8" ng-controller="programaController">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                 <h4>Programas</h4>
@@ -29,11 +29,12 @@
                         </thead>
                         <tbody ng-show="broadcast = 'cfpLoadingBar:completed'" class="text-center">
                             <tr ng-repeat="programa in programas">
-                                <td><% programa.name_es %></td>
-                                <td><% programa.tipo %></td>
-                                <td>Ciudad</td>
-                                <td>Instituto</td>
-                                <td>Cursos</td>
+                                <td> <% programa.name_es %> </td>
+                                <td> <% programa.tipo.name_es %> </td>
+                                <td> <% programa.tipo.tipo %> </td>
+                                <td> <% programa.instituto.ciudad.name_es %> </td>
+                                <td> id de curso </td>
+                                <td> <% programa.instituto.name %> </td>
                                 <td><button class="btn btn-info btn-sm" ng-click="modal('edit',pais.id)">Editar</button></td>
                                 <td><button class="btn btn-danger btn-sm" ng-click="deletePais(pais.id)">Eliminar</button></td>
                             </tr>
@@ -51,7 +52,7 @@
                         </div>
 
                         <div class="modal-body">
-                            <form ng-show="broadcast = 'cfpLoadingBar:completed'" name="paisForm" class="form-horizontal" novalidate="" ng-submit="submitPrograma(mode, id)">
+                            <form ng-show="broadcast = 'cfpLoadingBar:completed'" name="programaForm" class="form-horizontal" novalidate="" ng-submit="submitPrograma(mode, id)">
                                 <div class="row">
                                     <div class="">
                                         <div class="form-group error">
@@ -60,7 +61,7 @@
                                                 <select class="form-control" name="ciudad" ng-model="selectedCiudad" ng-options="ciudad.name_es for ciudad in ciudades track by ciudad.id" required>
                                                     <option value="">Seleccione ciudad</option>
                                                 </select>
-                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Ciudad es requerido.</p>
+                                                <p class="col-md-offset-3" ng-show="programaForm.ciudad.$error.required" class="help-inline">Ciudad es requerido.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
@@ -69,7 +70,7 @@
                                                 <select class="form-control" name="instituto" ng-model="selectedInstituto" ng-options="instituto.name for instituto in institutos track by instituto.id" required>
                                                     <option value="">Seleccione Instituto</option>
                                                 </select>
-                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Insituto es requerido.</p>
+                                                <p class="col-md-offset-3" ng-show="programaForm.instituto.$error.required" class="help-inline">Insituto es requerido.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
@@ -78,7 +79,7 @@
                                                 <select class="form-control" name="tipo" ng-model="selectedTipo" ng-options="tipo.name_es group by tipo.tipo for tipo in tipos track by tipo.id" required>
                                                     <option value="">Seleccione tipo</option>
                                                 </select>
-                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Tipo es requerido.</p>
+                                                <p class="col-md-offset-3" ng-show="programaForm.tipo.$error.required" class="help-inline">Tipo es requerido.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">

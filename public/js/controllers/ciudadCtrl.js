@@ -86,8 +86,8 @@ angular.module('ciudadCtrl', [])
 	//SAVE ciudad
 	$scope.submitCiudad = function(mode, id, picFiles) {
 		//save ciudad pass comment data from the form
-		//use the function created in service
 		$scope.ciudadData.pais =  $scope.selectedPais.id;
+		//use the function created in service
 		Ciudad.save(mode, $scope.ciudadData, id)
 			.success(function(data) {
 				if (data.code == false) {

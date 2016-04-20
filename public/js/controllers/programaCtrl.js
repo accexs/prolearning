@@ -66,6 +66,10 @@ angular.module('programaCtrl', [])
 	//SAVE programa
 	$scope.submitPrograma = function(mode, id) {
 		//save programa pass comment data from the form
+		
+		$scope.programaData.tipo = $scope.selectedTipo.id;
+		$scope.programaData.instituto = $scope.selectedInstituto.id;
+
 		//use the function created in service
 		Programa.save(mode, $scope.programaData, id)
 			.success(function(data) {

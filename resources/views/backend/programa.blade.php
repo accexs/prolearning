@@ -58,7 +58,7 @@
                                             <label for="ciudad" class="col-md-4 control-label">Ciudad</label>
                                             <div class="col-md-4">
                                                 <select class="form-control" name="ciudad" ng-model="selectedCiudad" ng-options="ciudad.name_es for ciudad in ciudades track by ciudad.id" required>
-                                                    <option value="0">Seleccione ciudad</option>
+                                                    <option value="">Seleccione ciudad</option>
                                                 </select>
                                                 <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Ciudad es requerido.</p>
                                             </div>
@@ -67,23 +67,32 @@
                                             <label for="instituto" class="col-md-4 control-label">Instituto</label>
                                             <div class="col-md-4">
                                                 <select class="form-control" name="instituto" ng-model="selectedInstituto" ng-options="instituto.name for instituto in institutos track by instituto.id" required>
-                                                    <option value="0">Seleccione Instituto</option>
+                                                    <option value="">Seleccione Instituto</option>
                                                 </select>
-                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Ciudad es requerido.</p>
+                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Insituto es requerido.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group error">
+                                            <label for="tipo" class="col-md-4 control-label">Tipo</label>
+                                            <div class="col-md-4">
+                                                <select class="form-control" name="tipo" ng-model="selectedTipo" ng-options="tipo.name_es group by tipo.tipo for tipo in tipos track by tipo.id" required>
+                                                    <option value="">Seleccione tipo</option>
+                                                </select>
+                                                <p class="col-md-offset-3" ng-show="programaForm.pais.$error.required" class="help-inline">Tipo es requerido.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
                                             <label for="name_es" class="col-md-4 control-label">Nombre español</label>
                                             <div class="col-md-4">
-                                                <input class="form-control" type="text" name="name_es" value=" <% name_es %> " ng-model="paisData.name_es" required>
-                                                <p class="col-md-offset-3" ng-show="paisForm.name_es.$invalid" class="help-inline">Nombre es requerido.</p>
+                                                <input class="form-control" type="text" name="name_es" value=" <% name_es %> " ng-model="programaData.name_es" required>
+                                                <p class="col-md-offset-3" ng-show="programaForm.name_es.$invalid" class="help-inline">Nombre es requerido.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
                                             <label for="name_en" class="col-md-4 control-label">Nombre inglés</label>
                                             <div class="col-md-4">
-                                                <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="paisData.name_en" required>
-                                                <p class="col-md-offset-3" ng-show="paisForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>
+                                                <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="programaData.name_en" required>
+                                                <p class="col-md-offset-3" ng-show="programaForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -93,7 +102,7 @@
                                 </div>
                                                     
                                 <div class="row modal-footer">
-                                    <button type="submit" class="btn btn-primary" id="btn-save" ng-disabled="paisForm.$invalid">Guardar</button>
+                                    <button type="submit" class="btn btn-primary" id="btn-save" ng-disabled="programaForm.$invalid">Guardar</button>
                                 </div>
                             </form>
                         </div>

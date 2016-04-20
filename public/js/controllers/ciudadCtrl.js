@@ -23,6 +23,7 @@ angular.module('ciudadCtrl', [])
 	$scope.modal = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
+		//get paises
 		Pais.get()
 			.success(function(getData){
 				$scope.paises = getData;		

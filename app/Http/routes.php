@@ -53,6 +53,9 @@ Route::group(['middleware' => ['web']], function () {
         //programas
         Route::resource('programas', 'ProgramaController');
 
+        //tipos
+        Route::resource('tipos', 'TipoController');
+
         //cursos
         Route::resource('cursos', 'CursoController');
     });

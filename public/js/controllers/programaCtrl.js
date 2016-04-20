@@ -1,7 +1,7 @@
 angular.module('programaCtrl', [])
 
 // inject the programa service into our controller
-.controller('programaController', function($scope, $http, Programa, Ciudad, Instituto) {
+.controller('programaController', function($scope, $http, Programa, Ciudad, Instituto, Tipo) {
 	//object to hold all the data for the new programa form
 	$scope.programaData = {};
 
@@ -23,6 +23,11 @@ angular.module('programaCtrl', [])
 			.success(function(getData){
 				$scope.ciudades = getData;
 			});
+		//get tipos 
+		Tipo.get()
+			.success(function(getData){
+				$scope.tipos = getData;
+			});
 		//watch selectedCiudad value to get institutos
 		$scope.$watch('selectedCiudad', function(value){
 			if (value) {
@@ -36,11 +41,10 @@ angular.module('programaCtrl', [])
 			case 'create':
 				$scope.programaData = {
 					'name_es' : '',
-					'name_en' : '',
-					'info_es' : '',
-					'info_en' : '',
-					'code' : ''};
-				//delete $scope.selectedCiudad;
+					'name_en' : ''};
+				delete $scope.selectedCiudad;
+				delete $scope.selectedInstituto;
+				delete $scope.selectedTipo;
 				$scope.form_title = "Agregar programa";
 				break;
 			case 'edit':

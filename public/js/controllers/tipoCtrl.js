@@ -1,16 +1,16 @@
-angular.module('paisCtrl', [])
+angular.module('tipoCtrl', [])
 
-// inject the Pais service into our controller
-.controller('paisController', function($scope, $http, Pais) {
-	//object to hold all the data for the new pais form
-	$scope.paisData = {};
+// inject the tipo service into our controller
+.controller('tipoController', function($scope, $http, Tipo) {
+	//object to hold all the data for the new tipo form
+	$scope.tipoData = {};
 
-	//get all paises first and bind it to the $scope.paises object
+	//get all tipos first and bind it to the $scope.tipos object
 	//use the funcion created in service
-	//GET ALL PAISES
-	Pais.get()
+	//GET ALL tipos
+	Tipo.get()
 		.success(function(data) {
-			$scope.paises = data;
+			$scope.tipos = data;
 		});
 
 	$scope.modal = function(mode, id) {
@@ -18,42 +18,40 @@ angular.module('paisCtrl', [])
 		$scope.errors = "";
 		switch (mode) {
 			case 'create':
-				$scope.paisData = {
+				$scope.tipoData = {
 					'name_es' : '',
 					'name_en' : ''};
-				$scope.form_title = "Agregar pais";
+				$scope.form_title = "Agregar Tipo";
 				break;
 			case 'edit':
-				$scope.form_title = "Editar pais";
+				$scope.form_title = "Editar Tipo";
 				$scope.id = id;
-				Pais.show(id)
+				Tipo.show(id)
 					.success(function(data) {
-						$scope.paisData = data;
+						$scope.tipoData = data;
 					});
 				break;
 			default:
 				break;
 		}
 		console.log();
-		$('#paisModal').modal('show');
+		$('#tipoModal').modal('show');
 	}
 
 	//function to handle submitting the form
-	//SAVE PAIS
-	$scope.submitPais = function(mode, id) {
-		//save pais pass comment data from the form
+	//SAVE Tipo
+	$scope.submitTipo = function(mode, id) {
+		//save Tipo pass comment data from the form
 		//use the function created in service
-		Pais.save(mode, $scope.paisData, id)
+		Tipo.save(mode, $scope.tipoData, id)
 			.success(function(data) {
 				if (data.code == 400) {
-					//$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
-					//$scope.paisForm.$dirty = false;
 					//if successful, refresh pais list
 					Pais.get()
 						.success(function(getData) {
-							$scope.paises = getData;
+							$scope.tipos = getData;
 						});
 				}
 			})
@@ -64,14 +62,14 @@ angular.module('paisCtrl', [])
 	};
 
 	//function to handle delete pais
-	$scope.deletePais = function(id) {
+	$scope.deleteTipo = function(id) {
 		//use function created in service
-		Pais.destroy(id)
+		Tipo.destroy(id)
 			.success(function(data){
-				//if successful refresh pais list
-				Pais.get()
+				//if successful refresh Tipo list
+				Tipo.get()
 					.success(function(getData){
-						$scope.paises = getData;
+						$scope.tipos = getData;
 					});
 			});
 	};

@@ -20,7 +20,7 @@ class CiudadController extends Controller
     public function index()
     {
         //
-        return response()->json(Ciudad::with('fotos')->get());
+        return response()->json(Ciudad::all());
     }
 
     /**
@@ -79,7 +79,7 @@ class CiudadController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Ciudad::with('fotos')->find($id));
+        return response()->json(Ciudad::with('fotos')->with('pais')->find($id));
     }
 
     /**

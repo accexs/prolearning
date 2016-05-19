@@ -9,7 +9,7 @@
     <title>Prolearning</title>
 
     <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
@@ -60,9 +60,9 @@
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('/ciudad') }}" title="">Paises y Ciudades</a></li>
                     <li><a href="{{ url('/instituto') }}" title="">Institutos</a></li>
-                    <li><a href="{{ url('/') }}" title="">Programas y Cursos</a></li>
-                    <li><a href="{{ url('/') }}" title="">Promociones</a></li>
-                    <li><a href="{{ url('/') }}" title="">Testimionios</a></li>
+                    <li><a href="{{ url('/programa') }}" title="">Programas y Cursos</a></li>
+                    <li><a href="{{ url('/promo') }}" title="">Promociones</a></li>
+                    <li><a href="{{ url('/testimonio') }}" title="">Testimionios</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -114,11 +114,13 @@
     <script src="js/controllers/institutoCtrl.js"></script>
     <script src="js/controllers/programaCtrl.js"></script>
     <script src="js/controllers/tipoCtrl.js"></script>
+    <script src="js/controllers/cursoCtrl.js"></script>
     <script src="js/services/paisService.js"></script>
     <script src="js/services/ciudadService.js"></script>
     <script src="js/services/institutoService.js"></script>
     <script src="js/services/programaService.js"></script>
     <script src="js/services/tipoService.js"></script>
+    <script src="js/services/cursoService.js"></script>
     <script src="js/services/weatherService.js"></script>
 </body>
 </html>

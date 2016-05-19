@@ -1,20 +1,18 @@
 angular.module('cursoCtrl', [])
 
 // inject the curso service into our controller
-.controller('cursoController', function($scope, $http, curso) {
+.controller('cursoController', function($scope, $http, Curso) {
 	//object to hold all the data for the new curso form
 	$scope.cursoData = {};
 
-	//loadin variable to show the spining loading icon
-	$scope.loading = true;
+	$scope.showCreate = false;
 
-	//get all cursoes first and bind it to the $scope.cursoes object
+	//get all cursos first and bind it to the $scope.cursoes object
 	//use the funcion created in service
 	//GET ALL cursoES
-	curso.get()
+	Curso.get()
 		.success(function(data) {
 			$scope.cursos = data;
-			$scope.loading = false;
 		});
 
 	$scope.modal = function(mode, id) {
@@ -33,10 +31,9 @@ angular.module('cursoCtrl', [])
 			case 'edit':
 				$scope.form_title = "Editar curso";
 				$scope.id = id;
-				curso.show(id)
+				Curso.show(id)
 					.success(function(data) {
 						$scope.cursoData = data;
-						$scope.loading = false;
 					});
 				break;
 			default:
@@ -49,21 +46,18 @@ angular.module('cursoCtrl', [])
 	//function to handle submitting the form
 	//SAVE curso
 	$scope.submitcurso = function(mode, id) {
-		$scope.loading = true;
 		//save curso pass comment data from the form
 		//use the function created in service
-		curso.save(mode, $scope.cursoData, id)
+		Curso.save(mode, $scope.cursoData, id)
 			.success(function(data) {
 				if (data.code == 400) {
-					$scope.loading = false;
 					$scope.errors = data.errors;
 				}else{
 					//$scope.cursoForm.$dirty = false;
 					//if successful, refresh curso list
-					curso.get()
+					Curso.get()
 						.success(function(getData) {
 							$scope.cursos = getData;
-							$scope.loading = false;
 							$('#myModal').modal('hide');
 						});
 				}
@@ -76,15 +70,13 @@ angular.module('cursoCtrl', [])
 
 	//function to handle delete curso
 	$scope.deletecurso = function(id) {
-		$scope.loading = true;
 		//use function created in service
-		curso.destroy(id)
+		Curso.destroy(id)
 			.success(function(data){
 				//if successful refresh curso list
-				curso.get()
+				Curso.get()
 					.success(function(getData){
 						$scope.cursos = getData;
-						$scope.loading = false;
 					});
 			});
 	};

@@ -29,4 +29,14 @@ class PlappController extends Controller
         //
         return view('backend.programa');
     }
+
+    function promo(){
+        //
+        return view('backend.promo');
+    }
+
+    function testimonio(){
+        //
+        return view('backend.testimonio');
+    }
 }

@@ -20,7 +20,7 @@ class InstitutoController extends Controller
     public function index()
     {
         //
-        return response()->json(Instituto::with('fotos')->get());
+        return response()->json(Instituto::all());
     }
 
     /**
@@ -109,7 +109,7 @@ class InstitutoController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Instituto::with('fotos')->find($id));
+        return response()->json(Instituto::with('fotos')->with('ciudad')->find($id));
     }
 
     /**

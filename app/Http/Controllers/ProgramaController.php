@@ -80,6 +80,7 @@ class ProgramaController extends Controller
     public function show($id)
     {
         //
+        return response()->json(Programa::with('instituto.ciudad')->with('tipo')->find($id));
     }
 
     /**

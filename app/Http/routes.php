@@ -65,5 +65,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('instituto','PlappController@instituto');
     Route::get('programa','PlappController@programa');
     Route::get('curso','PlappController@curso');
+    Route::get('promo','PlappController@promo');
+    Route::get('testimonio','PlappController@testimonio');
 
 });

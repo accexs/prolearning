@@ -28,6 +28,12 @@ angular.module('programaCtrl', [])
 			.success(function(getData){
 				$scope.tipos = getData;
 			});
+		//get institutos
+		Instituto.get()
+			.success(function(getData){
+				$scope.institutos = getData;
+			});
+
 		//watch selectedCiudad value to get institutos
 		$scope.$watch('selectedCiudad', function(value){
 			if (value) {
@@ -53,6 +59,9 @@ angular.module('programaCtrl', [])
 				Programa.show(id)
 					.success(function(data) {
 						$scope.programaData = data;
+						$scope.selectedInstituto = data.instituto;
+						$scope.selectedCiudad = data.instituto.ciudad;
+						$scope.selectedTipo = data.tipo;
 					});
 				break;
 			default:
@@ -61,6 +70,11 @@ angular.module('programaCtrl', [])
 		console.log(id);
 		$('#programaModal').modal('show');
 	}
+
+	//modal for curso
+	$scope.modalCurso = function(programa_id) {
+		$('#cursoModal').modal('show');
+	};
 
 	//function to handle submitting the form
 	//SAVE programa

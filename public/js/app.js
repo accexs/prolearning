@@ -13,6 +13,8 @@ var plApp = angular.module('plApp',
 		'programaService',
 		'tipoCtrl',
 		'tipoService',
+		'cursoCtrl',
+		'cursoService',
 		'weatherService',
 		'datatables'
 		],

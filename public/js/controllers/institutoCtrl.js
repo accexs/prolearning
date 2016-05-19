@@ -16,14 +16,13 @@ angular.module('institutoCtrl', [])
 		});
 
 	$scope.modal = function(mode, id) {
-		$scope.mode = mode;
 		$scope.errors = "";
+		Ciudad.get()
+			.success(function(getData){
+				$scope.ciudades = getData;
+			});
 		switch (mode) {
 			case 'create':
-				Ciudad.get()
-					.success(function(getData){
-						$scope.ciudades = getData;
-					});
 				$scope.institutoData = {
 					'name' : '',
 					'desc_es' : '',
@@ -59,10 +58,7 @@ angular.module('institutoCtrl', [])
 				Instituto.show(id)
 					.success(function(data) {
 						$scope.institutoData = data;
-						Ciudad.show(data.ciudad_id)
-							.success(function(getData){
-								$scope.selectedCiudad = getData;
-							});
+						$scope.selectedCiudad = data.ciudad;
 						//get photos falta bucle for
 						$scope.thumb = data.fotos[data.fotos.length-1].img
 					});

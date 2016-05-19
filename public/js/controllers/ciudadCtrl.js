@@ -48,11 +48,7 @@ angular.module('ciudadCtrl', [])
 				Ciudad.show(id)
 					.success(function(data) {
 						$scope.ciudadData = data;
-						//get pais of a ciudad
-						Pais.show(data.pais_id)
-							.success(function(getData){
-								$scope.selectedPais = getData;
-							});
+						$scope.selectedPais = data.pais;
 						//get weather data
 						Weather.get($scope.ciudadData.code)
 							.success(function(data) {

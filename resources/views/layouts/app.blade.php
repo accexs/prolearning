@@ -109,12 +109,15 @@
     <script src="js/ng-file-upload.js"></script>
     <script src="js/tinymce.js"></script>
     <script src="js/loading-bar.js"></script>
+
+    <!--CONTROLLERS-->
     <script src="js/controllers/paisCtrl.js"></script>
     <script src="js/controllers/ciudadCtrl.js"></script>
     <script src="js/controllers/institutoCtrl.js"></script>
     <script src="js/controllers/programaCtrl.js"></script>
     <script src="js/controllers/tipoCtrl.js"></script>
     <script src="js/controllers/cursoCtrl.js"></script>
+    <!--SERVICES-->
     <script src="js/services/paisService.js"></script>
     <script src="js/services/ciudadService.js"></script>
     <script src="js/services/institutoService.js"></script>

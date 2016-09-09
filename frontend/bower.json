@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "homepage": "https://github.com/accexs/prolearning.local",
+  "authors": [
+    "Ronny Arvelo <ronny.arvelo@gmail.com>"
+  ],
+  "description": "prolearning website frontend",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

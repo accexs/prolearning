@@ -6764,7 +6764,7 @@ button.close {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(161, 242, 24, 0.50196078);
+  background: rgba(161, 242, 24, 0.8);
   display: none;
   -webkit-transition: all .6s ease;
   /* Fade to color for Chrome and Safari */

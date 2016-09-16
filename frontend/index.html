@@ -4,10 +4,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+		<title>Prolearning</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="./bower_components/bootstrap/css/bootstrap.css">
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,10 +19,19 @@
 		<![endif]-->
 
 	</head>
-	<body>
+	<body ng-app="frontPl" ng-controller="HomeController">
 		<div class="container">
 			<div class="row">
-				header
+				<div class="col-md-3 col-md-offset-9">
+					<div class="">
+						<p class="text-right">
+						<i class="fa fa-facebook-official fa-2x" aria-hidden="true" style="color: blue"></i>
+						<i class="fa fa-instagram fa-2x" aria-hidden="true" style=""></i>
+						<i class="fa fa-youtube-play fa-2x" aria-hidden="true" style="color: red"></i>
+						<i class="fa fa-whatsapp fa-2x" aria-hidden="true" style="color: green"></i>
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="row">
 				<nav class="navbar navbar-default" role="navigation">
@@ -33,19 +44,21 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">Title</a>
+							<a class="navbar-brand" href="#">Prolearning</a>
 						</div>
 				
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Link</a></li>
+								<!--
 								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								-->
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Link</a></li>
+								<li><a href="#">PROGRAMAS</a></li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"><DATA>DESTINOS</DATA> <b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a href="#">Action</a></li>
 										<li><a href="#">Another action</a></li>
@@ -53,6 +66,9 @@
 										<li><a href="#">Separated link</a></li>
 									</ul>
 								</li>
+								<li class=""><a href="#">PROMOCIONES</a></li>
+								<li class=""><a href="#">PRESUPUESTO</a></li>
+								<li class=""><a href="#">CONTACTENOS</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div>
@@ -207,7 +223,7 @@
 				<h1 class="text-center text-info">¿QUÉ OPINAN DE NOSOTROS?</h1>
 			</div>
 			<div class="row bg-primary">
-				<h1 class="text-center text-primary">¿QUIENES SON NUESTROS ALIADOS?</h1>
+				<h1 class="text-center">¿QUIENES SON NUESTROS ALIADOS?</h1>
 			</div>
 			<div class="row">
 				<h1>FOOTER</h1>
@@ -220,6 +236,11 @@
 		<script src="./bower_components/jquery/dist/jquery.js"></script>
 		<!-- Angular -->
 		<script src="./bower_components/angular/angular.js"></script>
+		<script src="./js/app.js"></script>
+			<!--ui-router-->
+			<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+			<!--controllers-->
+			<script src="./js/controllers/HomeController.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</body>

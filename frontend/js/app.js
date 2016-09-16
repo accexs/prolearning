@@ -1,7 +1,6 @@
 var frontPl = angular.module('frontPl',
 	[
-	'ui.router',
-	'ngAnimate'
+	'ui.router'
 	]);
 
 frontPl.config(function($stateProvider, $urlRouterProvider) {
@@ -9,7 +8,7 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
     $stateProvider.state('home', {
             url: '/home',
-            templateUrl: './_partials/_home.html'
+            templateUrl: 'partials/home.html'
         });
         
         

@@ -1,3 +1,3 @@
-angular.module('frontPl', []).controller('HomeController', function($scope){
+angular.module('HomeController', []).controller('HomeController', function($scope){
 
 });

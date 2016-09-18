@@ -33,6 +33,10 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
     .state('contactanos', {
             url: '/contactanos',
             templateUrl: 'partials/_contactanos.html'
+        })
+    .state('conocenos', {
+            url: '/conocenos',
+            templateUrl: 'partials/_conocenos.html'
         });
 
         

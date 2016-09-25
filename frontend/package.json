@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "front end for prolearning website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ronny.arvelo@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp-less": "^3.1.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

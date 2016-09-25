@@ -26,7 +26,7 @@
 Route::group(['middleware' => ['web']], function () {
     //
     Route::get('/', function () {
-        return view('home');
+        return view('frontent.index');
     });
 
     Route::auth();

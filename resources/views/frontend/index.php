@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="frontPl">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,9 @@
 		<title>Prolearning</title>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="./frontend/bower_components/bootstrap/dist/css/bootstrap.css">
 		<!-- Font awesome -->
-		<link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="./frontend/bower_components/font-awesome/css/font-awesome.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +19,9 @@
 		<![endif]-->
 
 	</head>
-	<body ng-app="frontPl">
+	<body>
 
-		<div class="container">
+		<div  class="container">
 			<div class="row">
 				<div class="col-md-3 col-md-offset-9">
 					<div class="">
@@ -146,18 +146,21 @@
 		
 		
 
-		<!-- jQuery -->
-		<script src="./bower_components/jquery/dist/jquery.js"></script>
 		<!-- Angular -->
-		<script src="./bower_components/angular/angular.js"></script>
+		<script src="./frontend/bower_components/angular/angular.js"></script>
+		<!-- jQuery -->
+		<script src="./frontend/bower_components/jquery/dist/jquery.js"></script>
 		<!--ng-animate-->
-		<script src="./bower_components/angular-animate/angular-animate.js"></script>
+		<script src="./frontend/bower_components/angular-animate/angular-animate.js"></script>
 		<!--ui-router-->
-		<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-		<script src="./js/app.js"></script>
+		<script src="./frontend/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="./frontend/js/app.js"></script>
 			<!--controllers-->
-			<script src="./js/controllers/HomeController.js"></script>
+			<script src="./frontend/js/controllers/HomeController.js"></script>
+			<script src="./frontend/js/controllers/DestinoController.js"></script>
+			<!--services-->
+			<script src="./frontend/js/services/destinoService.js"></script>
 		<!-- Bootstrap JavaScript -->
-		<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./frontend/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -26,6 +26,11 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'frontend/partials/_destinos.html',
             controller: 'DestinoController'
         })
+    .state('detail', {
+            url: '/destinos/:id',
+            templateUrl: 'frontend/partials/_destino.html',
+            controller: 'DestinoDetailController'
+        })
     .state('promociones', {
             url: '/promociones',
             templateUrl: 'frontend/partials/_promociones.html'

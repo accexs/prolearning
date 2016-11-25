@@ -9,4 +9,19 @@ angular.module('DestinoController', [
 				$scope.paises = data;
 			});
 
-});
+
+
+	})
+
+	.controller('DestinoDetailController', function($scope, Destino, $stateParams){
+
+		Destino.show($stateParams.id)
+			.success(function(data){
+				$scope.pais = data;
+			});
+
+
+
+	})
+
+	

@@ -12,7 +12,7 @@ angular.module('destinoService', [])
 		},
 		//show pais by id
 		show : function(id){
-			return $http.get('api/pais/' + id);
+			return $http.get('api/paises/' + id);
 		}
 	}
 });

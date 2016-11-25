@@ -58,6 +58,9 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a ui-sref="programas">PROGRAMAS</a></li>
+								
+								<li><a ui-sref="destinos">DESTINOS</a></li>
+								<!--
 								<li class="dropdown">
 									<a ui-sref="destinos" class="dropdown-toggle" data-toggle="dropdown"><DATA>DESTINOS</DATA> <b class="caret"></b></a>
 									<ul class="dropdown-menu">
@@ -66,7 +69,8 @@
 										<li><a href="#">Something else here</a></li>
 										<li><a href="#">Separated link</a></li>
 									</ul>
-								</li>
+								</li> -->
+
 								<li class=""><a ui-sref="promociones">PROMOCIONES</a></li>
 								<li class=""><a ui-sref="presupuesto">PRESUPUESTO</a></li>
 								<li class=""><a ui-sref="contactanos">CONTÁCTANOS</a></li>
@@ -79,67 +83,7 @@
 			<!--content and nested views-->
 			<div ui-view></div>
 
-			<!--footer-->
-			<div class="row">
-				<div class="text-primary text-center">
-					<div class="col-md-3">
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">¿NECESITAS AYUDA?</h4>
-							<h6><a href="">CHAT EN VIVO</a></h6>
-							<h6><a href="">ESCRIBENOS</a></h6>
-							<h6><a href="">ENVÍANOS UN CORREO</a></h6>
-							<h6><a href="">LLÁMANOS</a></h6>
-							<h6><a href="">PREGUNTAS FRECUENTES</a></h6>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">NOSOTROS</h4>
-							<h6><a ui-sref="conocenos">CONÓCENOS</a></h6>
-							<h6><a href="">TESTIMONIOS</a></h6>
-							<h6><a href="">PROMOCIONES</a></h6>
-							<h6><a href="">CONTACTO</a></h6>
-							<h6><a href="">PRESUPUESTOS</a></h6>
-						</div>
-						<br>
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">ALOJAMIENTO</h4>
-							<h6><a href="">ALOJAMIENTO</a></h6>
-							<h6><a href="">BOLETO AÉREO</a></h6>
-							<h6><a href="">PROGRAMAS</a></h6>
-							<h6><a href="">SEGURO MÉDICO</a></h6>
-							<h6><a href="">VISA</a></h6>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">DESTINOS</h4>
-							<h6><a href="">CONOCENOS</a></h6>
-							<h6><a href="">TESTIMONIOS</a></h6>
-							<h6><a href="">PROMOCIONES</a></h6>
-							<h6><a href="">CONTACTO</a></h6>
-							<h6><a href="">PRESUPUESTOS</a></h6>
-						</div>
-						<br>
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">PROGRAMAS</h4>
-							<h6><a href="">ADULTOS</a></h6>
-							<h6><a href="">JÓVENES</a></h6>
-
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="col-md-offset-1 text-left">
-							<h4 class="text-info">SÍGUENOS</h4>
-							<h6><a href="">CONOCENOS</a></h6>
-							<h6><a href="">TESTIMONIOS</a></h6>
-							<h6><a href="">PROMOCIONES</a></h6>
-							<h6><a href="">CONTACTO</a></h6>
-							<h6><a href="">PRESUPUESTOS</a></h6>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		
 
 		</div>

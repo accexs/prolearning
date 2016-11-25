@@ -8,7 +8,7 @@ var frontPl = angular.module('frontPl',
 
 frontPl.config(function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('frontend/home');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
     // routes
@@ -26,7 +26,7 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'frontend/partials/_destinos.html',
             controller: 'DestinoController'
         })
-    .state('detail', {
+    .state('destinosDetail', {
             url: '/destinos/:id',
             templateUrl: 'frontend/partials/_destino.html',
             controller: 'DestinoDetailController'

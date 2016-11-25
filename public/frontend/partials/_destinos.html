@@ -31,7 +31,7 @@
 	        	</colgroup>
 				<tbody ng-repeat = "pais in paises">
 					<tr>
-					  <td colspan="2" rowspan="2"> {{pais.name_es}} <img class="img-responsive" src="http://placehold.it/400x400"></td>
+					  <td colspan="2" rowspan="2"> {{pais.name_es}}<a ui-sref="destinosDetail({id: pais.id})"><img class="img-responsive" src="http://placehold.it/400x400"></a></td>
 					  <td colspan="2"> {{pais.name_es}} <img class="img-responsive" src="http://placehold.it/400x200"></td>
 					</tr>
 					<tr>

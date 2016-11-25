@@ -87,8 +87,6 @@
 		
 
 		</div>
-		
-		
 
 		<!-- Angular -->
 		<script src="./frontend/bower_components/angular/angular.js"></script>

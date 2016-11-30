@@ -13,7 +13,7 @@ angular.module('paisCtrl', [])
 			$scope.paises = data;
 		});
 
-	$scope.modal = function(mode, id) {
+	$scope.paisModal = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
 		switch (mode) {
@@ -54,6 +54,7 @@ angular.module('paisCtrl', [])
 					Pais.get()
 						.success(function(getData) {
 							$scope.paises = getData;
+							$('#paisModal').modal('hide');
 						});
 				}
 			})
@@ -72,6 +73,7 @@ angular.module('paisCtrl', [])
 				Pais.get()
 					.success(function(getData){
 						$scope.paises = getData;
+						$('#paisModal').modal('hide');
 					});
 			});
 	};

@@ -11,7 +11,7 @@
                 	<p>Nombre <% pais.name_es %> </p>
                 	<p>Nombre en<% pais.name_en %> </p>
                 	<p>
-                		<button class="btn btn-detail" ng-click="modal('edit',pais.id)">Editar</button>
+                		<button class="btn btn-detail" ng-click="paisModal('edit',pais.id)">Editar</button>
                 		<a href="#" class="text-muted" ng-click="deletePais(pais.id)">Eliminar</a>
                 	</p>
                 </div>

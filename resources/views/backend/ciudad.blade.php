@@ -11,7 +11,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="">
-                        <button type="button" id="btn-add" class="btn btn-primary" ng-click="modal('create')">Agregar Pais</button>
+                        <button type="button" id="btn-add" class="btn btn-primary" ng-click="paisModal('create')">Agregar Pais</button>
                     </div>
                     <br>
                     <table datatable="ng" class="table table-condensed table-bordered table-hover table-responsive">
@@ -25,7 +25,7 @@
                         <tbody ng-show="broadcast = 'cfpLoadingBar:completed'" class="text-center">
                             <tr ng-repeat="pais in paises">
                                 <td><% pais.name_es %></td>
-                                <td><button class="btn btn-info btn-sm" ng-click="modal('edit',pais.id)">Editar</button></td>
+                                <td><button class="btn btn-info btn-sm" ng-click="paisModal('edit',pais.id)">Editar</button></td>
                                 <td><button class="btn btn-danger btn-sm" ng-click="deletePais(pais.id)">Eliminar</button></td>
                             </tr>
                         </tbody>

@@ -16,8 +16,8 @@ angular.module('ciudadService', [])
 				url = 'api/ciudades/' + ciudadData.id;
 				method = 'PUT'; 
 			}else{
-				method = 'POST';
 				url = 'api/ciudades';
+				method = 'POST';
 			}
 			return $http({
 				method: method,

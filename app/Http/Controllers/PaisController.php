@@ -79,7 +79,7 @@ class PaisController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Pais::find($id));
+        return response()->json(Pais::with('ciudades.institutos.programas.cursos')->find($id));
     }
 
     /**

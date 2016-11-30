@@ -7,15 +7,8 @@ angular.module('cursoCtrl', [])
 
 	$scope.showCreate = false;
 
-	//get all cursos first and bind it to the $scope.cursoes object
-	//use the funcion created in service
-	//GET ALL cursoES
-	Curso.get()
-		.success(function(data) {
-			$scope.cursos = data;
-		});
 
-	$scope.modal = function(mode, id) {
+	$scope.modalCurso = function(mode, id) {
 		$scope.mode = mode;
 		$scope.errors = "";
 		switch (mode) {
@@ -23,9 +16,18 @@ angular.module('cursoCtrl', [])
 				$scope.cursoData = {
 					'name_es' : '',
 					'name_en' : '',
-					'info_es' : '',
-					'info_en' : '',
-					'code' : ''};
+					'summary_es' : '',
+					'summary_en' : '',
+					'desc_es' : '',
+					'desc_en' : '',
+					'duration_es' : '',
+					'duration_en' : '',
+					'age_es' : '',
+					'age_en' : '',
+					'quantity_es' : '',
+					'quantity_en' : '',
+					'date_es' : '',
+					'date_en' : ''};
 				$scope.form_title = "Agregar curso";
 				break;
 			case 'edit':
@@ -40,13 +42,15 @@ angular.module('cursoCtrl', [])
 				break;
 		}
 		console.log(id);
-		$('#myModal').modal('show');
+		//$('#cursoModal').modal('show');
+		$scope.showCreate = true;
 	}
 
 	//function to handle submitting the form
 	//SAVE curso
-	$scope.submitcurso = function(mode, id) {
-		//save curso pass comment data from the form
+	$scope.submitCurso = function(mode, id) {
+		$scope.cursoData.programa_id = Curso.getProgramaId();
+
 		//use the function created in service
 		Curso.save(mode, $scope.cursoData, id)
 			.success(function(data) {
@@ -55,10 +59,10 @@ angular.module('cursoCtrl', [])
 				}else{
 					//$scope.cursoForm.$dirty = false;
 					//if successful, refresh curso list
-					Curso.get()
+					Curso.getByPrograma(Curso.getProgramaId())
 						.success(function(getData) {
 							$scope.cursos = getData;
-							$('#myModal').modal('hide');
+							$scope.showCreate = false;
 						});
 				}
 			})
@@ -69,7 +73,7 @@ angular.module('cursoCtrl', [])
 	};
 
 	//function to handle delete curso
-	$scope.deletecurso = function(id) {
+	$scope.deleteCurso = function(id) {
 		//use function created in service
 		Curso.destroy(id)
 			.success(function(data){

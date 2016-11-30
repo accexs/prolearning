@@ -1,7 +1,7 @@
 angular.module('programaCtrl', [])
 
 // inject the programa service into our controller
-.controller('programaController', function($scope, $http, Programa, Ciudad, Instituto, Tipo) {
+.controller('programaController', function($scope, $http, Programa, Ciudad, Instituto, Tipo, Curso) {
 	//object to hold all the data for the new programa form
 	$scope.programaData = {};
 
@@ -72,14 +72,19 @@ angular.module('programaCtrl', [])
 	}
 
 	//modal for curso
-	$scope.modalCurso = function(programa_id) {
+	$scope.modalListCurso = function(programa_id) {
+		$scope.showCreate = false;
+		Curso.setProgramaId(programa_id);
+		Curso.getByPrograma(programa_id)
+			.success(function(getData) {
+				$scope.cursos = getData;
+			});
 		$('#cursoModal').modal('show');
 	};
 
 	//function to handle submitting the form
 	//SAVE programa
 	$scope.submitPrograma = function(mode, id) {
-		//save programa pass comment data from the form
 		
 		$scope.programaData.tipo = $scope.selectedTipo.id;
 		$scope.programaData.instituto = $scope.selectedInstituto.id;

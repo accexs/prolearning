@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="name_en" class="col-md-4 control-label">Informacion español</label>
+                                    <label for="info_es" class="col-md-4 control-label">Informacion español</label>
                                     <div class="col-md-6">
                                         <textarea ui-tinymce class="form-control" type="text" name="info_es" value=" <% info_es %> " ng-model="ciudadData.info_es" required></textarea>
                                         <p class="col-md-offset-3" ng-show="ciudadForm.info_es.$invalid" class="help-inline">Informacion requerida.</p>

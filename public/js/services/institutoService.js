@@ -21,7 +21,7 @@ angular.module('institutoService', [])
 				method = 'PUT';
 			}else{
 				url = 'api/institutos';
-				method = 'POST'
+				method = 'POST';
 			}
 			return $http({
 				method: method,

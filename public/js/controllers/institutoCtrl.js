@@ -16,6 +16,7 @@ angular.module('institutoCtrl', [])
 		});
 
 	$scope.modal = function(mode, id) {
+		$scope.mode = mode;
 		$scope.errors = "";
 		Ciudad.get()
 			.success(function(getData){

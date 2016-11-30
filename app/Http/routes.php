@@ -58,6 +58,8 @@ Route::group(['middleware' => ['web']], function () {
 
         //cursos
         Route::resource('cursos', 'CursoController');
+        Route::get('cursos/programa/{id}','CursoController@indexByPrograma');
+
     });
 
     Route::get('pais','PlappController@pais');

@@ -62,12 +62,17 @@ Route::group(['middleware' => ['web']], function () {
 
     });
 
-    Route::get('pais','PlappController@pais');
-    Route::get('ciudad','PlappController@ciudad');
-    Route::get('instituto','PlappController@instituto');
-    Route::get('programa','PlappController@programa');
-    Route::get('curso','PlappController@curso');
-    Route::get('promo','PlappController@promo');
-    Route::get('testimonio','PlappController@testimonio');
+    Route::group(array(/*'prefix' => 'admin',*/ 'middleware' => 'auth'), function(){
+        // ADMIN ROUTES
+        Route::get('adm','PlappController@admIndex');
+        Route::get('pais','PlappController@pais');
+        Route::get('ciudad','PlappController@ciudad');
+        Route::get('instituto','PlappController@instituto');
+        Route::get('programa','PlappController@programa');
+        Route::get('curso','PlappController@curso');
+        Route::get('promo','PlappController@promo');
+        Route::get('testimonio','PlappController@testimonio');
+    });
+    
 
 });

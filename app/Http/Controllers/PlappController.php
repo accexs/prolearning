@@ -39,4 +39,9 @@ class PlappController extends Controller
         //
         return view('backend.testimonio');
     }
+
+    function admIndex(){
+        //
+        return redirect('login');
+    }
 }

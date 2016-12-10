@@ -49,7 +49,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/adm') }}">
                     Prolearning
                 </a>
             </div>
@@ -57,7 +57,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ url('/adm') }}">Home</a></li>
                     <li><a href="{{ url('/ciudad') }}" title="">Paises y Ciudades</a></li>
                     <li><a href="{{ url('/instituto') }}" title="">Institutos</a></li>
                     <li><a href="{{ url('/programa') }}" title="">Programas y Cursos</a></li>

@@ -9,7 +9,7 @@ angular.module('DestinoController', [
 				$scope.paises = data;
 			});
 
-
+	$scope.pais1.id	= 1;
 
 	})
 

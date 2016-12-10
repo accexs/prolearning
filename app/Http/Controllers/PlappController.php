@@ -42,6 +42,6 @@ class PlappController extends Controller
 
     function admIndex(){
         //
-        return redirect('login');
+        return view('backend.index');
     }
 }

@@ -6,9 +6,8 @@ var frontPl = angular.module('frontPl',
 	'ngAnimate'
 	]);
 
-frontPl.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+frontPl.config(function($stateProvider, $urlRouterProvider) {
 
-    $locationProvider.html5Mode(true);
     
     $urlRouterProvider.otherwise('/home');
 
@@ -53,4 +52,11 @@ frontPl.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
         
         
         
+});
+
+frontPl.run(function($rootScope){
+    //the above code here
+    $rootScope.$on('$stateChangeSuccess',function(){
+    $("html, body").animate({ scrollTop: 0 }, 200);
+    })
 });

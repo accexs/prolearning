@@ -15,38 +15,94 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
     // routes
     .state('home', {
             url: '/home',
-            templateUrl: 'frontend/partials/_home.html',
-            controller: 'HomeController'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_home.html',
+                    controller: 'HomeController'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('programas', {
             url: '/programas',
-            templateUrl: 'frontend/partials/_programas.html'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_programas.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('destinos', {
             url: '/destinos',
-            templateUrl: 'frontend/partials/_destinos.html',
-            controller: 'DestinoController'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_destinos.html',
+                    controller: 'DestinoController'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('destinosDetail', {
             url: '/destinos/:id',
-            templateUrl: 'frontend/partials/_destino.html',
-            controller: 'DestinoDetailController'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_destino.html',
+                    controller: 'DestinoDetailController'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('promociones', {
             url: '/promociones',
-            templateUrl: 'frontend/partials/_promociones.html'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_promociones.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('presupuesto', {
             url: '/presupuesto',
-            templateUrl: 'frontend/partials/_presupuesto.html'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_presupuesto.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('contactanos', {
             url: '/contactanos',
-            templateUrl: 'frontend/partials/_contactanos.html'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_contactanos.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         })
     .state('conocenos', {
             url: '/conocenos',
-            templateUrl: 'frontend/partials/_conocenos.html'
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_conocenos.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer.html'
+                }
+            }
         });
 
         

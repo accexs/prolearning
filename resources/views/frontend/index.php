@@ -82,10 +82,10 @@
 			</div>
 
 			<!--content and nested views-->
-			<div ui-view></div>
+			<div ui-view="content"></div>
 
 			
-		
+			<div ui-view="footer"></div>
 
 		</div>
 

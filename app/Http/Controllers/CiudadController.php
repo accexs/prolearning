@@ -58,7 +58,7 @@ class CiudadController extends Controller
                 $ciudad -> name_en = $request->input('name_en');
                 $ciudad -> info_es = $request->input('info_es');
                 $ciudad -> info_en = $request->input('info_en');
-                $ciudad -> code = $request->input('code');
+                
                 Pais::find($request->input('pais'))->ciudades() -> save($ciudad);
 
                 return response()->json(['success' => true,

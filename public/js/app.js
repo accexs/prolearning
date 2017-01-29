@@ -15,7 +15,6 @@ var plApp = angular.module('plApp',
 		'tipoService',
 		'cursoCtrl',
 		'cursoService',
-		'weatherService',
 		'datatables'
 		],
 		function($interpolateProvider){

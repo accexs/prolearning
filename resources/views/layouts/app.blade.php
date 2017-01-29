@@ -15,9 +15,6 @@
     <!-- Styles -->
     <!--bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <!--weather-->
-    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/weather-icons-wind.min.css">
     <!--loading bar-->
     <link rel="stylesheet" type="text/css" href="css/loading-bar.css">
     <!--datatables-->
@@ -124,6 +121,5 @@
     <script src="js/services/programaService.js"></script>
     <script src="js/services/tipoService.js"></script>
     <script src="js/services/cursoService.js"></script>
-    <script src="js/services/weatherService.js"></script>
 </body>
 </html>

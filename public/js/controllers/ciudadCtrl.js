@@ -1,11 +1,9 @@
 angular.module('ciudadCtrl', [])
 
 // inject the ciudad service into our controller
-.controller('ciudadController', function($scope, $http, Ciudad, Weather, Pais, Upload, $timeout, cfpLoadingBar) {
+.controller('ciudadController', function($scope, $http, Ciudad,  Pais, Upload, $timeout, cfpLoadingBar) {
 	//object to hold all the data for the new ciudad form
 	$scope.ciudadData = {};
-	//object to hold weather data from openwather
-	$scope.weather = {};
 	//array for images
 	$scope.picFiles = [];
 	//array for thumbnails
@@ -35,7 +33,6 @@ angular.module('ciudadCtrl', [])
 					'name_en' : '',
 					'info_es' : '',
 					'info_en' : '',
-					'code' : '',
 					'pais' : ''};
 				delete $scope.selectedPais;
 				delete $scope.tumb;
@@ -49,24 +46,6 @@ angular.module('ciudadCtrl', [])
 					.success(function(data) {
 						$scope.ciudadData = data;
 						$scope.selectedPais = data.pais;
-						//get weather data
-						Weather.get($scope.ciudadData.code)
-							.success(function(data) {
-								data.main.temp = Math.round(data.main.temp - 273.15) + '°C';
-								code = data.weather[0].id;
-								prefix = 'wi wi-';
-								icon = '';
-								$http.get('js/icons.json')
-									.success(function(data){
-										$scope.icon = $scope.icon + data[code].icon;
-									});
-								// If we are not in the ranges mentioned above, add a day/night prefix.
-								if (!(code > 699 && code < 800) && !(code > 899 && code < 1000)) {
-								    icon = 'day-' + icon;
-								}
-								$scope.icon =prefix + icon;
-								$scope.weather = data;
-							});
 						//get photos falta bucle for
 						$scope.thumb = data.fotos[data.fotos.length-1].img
 					});

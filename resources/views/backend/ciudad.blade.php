@@ -153,20 +153,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="code" class="col-md-4 control-label">Código clima</label>
-                                    <div class="col-md-4">
-                                        <input class="form-control" type="text" name="code" value=" <% code %> " ng-model="ciudadData.code" required>
-                                        <p class="col-md-offset-3" ng-show="ciudadForm.code.$invalid" class="help-inline">Informacion requerida.</p>
-                                    </div>
-                                </div>
-                                <div ng-show="mode == 'edit'" class="form-group error">
-                                    <label class="col-md-4 control-label" for="">Widget Clima</label>
-                                    <div class="col-md-4">
-                                        <i style="font-size: 40px" ng-class="icon"></i>
-                                        <i style="font-size: 20px" class="wi wi-thermometer"></i><%weather.main.temp%>
-                                    </div>
-                                </div>
-                                <div class="form-group error">
                                     <label class="col-md-4 control-label" for="img">Imagen 1</label>
                                     <div class="col-md-5">
                                         <input ngf-select accept="image/*" ng-model="picFiles[0]" class="form-control" type="file" name="img" ngf-max-size="2MB" ngf-model-invalid="errorFiles" ng-required="!thumb">

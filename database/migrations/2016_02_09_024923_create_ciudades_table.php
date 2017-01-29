@@ -18,7 +18,6 @@ class CreateCiudadesTable extends Migration
             $table->string('name_en',100);
             $table->string('info_es',100);
             $table->string('info_en',100);
-            $table->string('code',50);
             $table->integer('pais_id')->unsigned();
             $table->timestamps();
         });

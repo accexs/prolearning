@@ -5,8 +5,6 @@ angular.module('paisCtrl', [])
 	//object to hold all the data for the new pais form
 	$scope.paisData = {};
 
-	//get all paises first and bind it to the $scope.paises object
-	//use the funcion created in service
 	//GET ALL PAISES
 	Pais.get()
 		.success(function(data) {

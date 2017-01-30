@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use App\Pais;
+use App\Testimonio;
 use Validator;
 
-class PaisController extends Controller
+use App\Http\Requests;
+
+class TestimonioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +18,7 @@ class PaisController extends Controller
     public function index()
     {
         //
-        return response()->json(Pais::all());
+        return response()-json(Testimonio::all());
     }
 
     /**
@@ -42,32 +41,34 @@ class PaisController extends Controller
     {
         //
         $rules = [
-            'name_es' => 'required',
-            'name_en' => 'required', 
+            'name' => 'required',
+            'location' => 'required',
+            'testimonio' => 'required' 
         ];
         try {
 
-            $validator = Validator::make($request->all(), $rules);
-            if ($validator->fails()) {
-                # code...
-                return response()->json([
+        	$validator = Validator::make($request->all(), $rules);
+        	if ($validator->fails()) {
+        		# code...
+        		return response()->json([
                     'success' => false,
                     'errors' => $validator->errors()->all(),
                     'code' => 400
                     ]);
-            }else{
-                $pais = new Pais;
-                $pais->name_es = $request->input('name_es');
-                $pais->name_en = $request->input('name_en');
-                $pais->save();
+        	}else{
+        		$testimonio = new Testimonio;
+        		$testimonio->name = $request->input('name');
+        		$testimonio->location = $request->input('location');
+        		$testimonio->testimonio = $request->input('testimonio');
+        		$testimonio->save();
 
-                return response()->json(['success' => true]);
-            }
+        		return response()->json(['success' => true]);
+        	}
+        	
         } catch (Exception $e) {
-            \Log::info('Error creating pais: '.$e);
-            return response()->json(['success' => false], 500);
+        	\Log::info('Error creating testimonio: '.$e);
+        	return response()->json(['success' => false], 500);
         }
-
     }
 
     /**
@@ -79,7 +80,7 @@ class PaisController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Pais::with('ciudades.institutos.programas.cursos')->find($id));
+        return response()->json(Testimonio::with('fotos'));
     }
 
     /**
@@ -104,32 +105,34 @@ class PaisController extends Controller
     {
         //
         $rules = [
-            'name_es' => 'required',
-            'name_en' => 'required', 
+            'name' => 'required',
+            'location' => 'required',
+            'testimonio' => 'required' 
         ];
         try {
 
-            $validator = Validator::make($request->all(), $rules);
-            if ($validator->fails()) {
-                # code...
-                return response()->json([
+        	$validator = Validator::make($request->all(), $rules);
+        	if ($validator->fails()) {
+        		# code...
+        		return response()->json([
                     'success' => false,
                     'errors' => $validator->errors()->all(),
                     'code' => 400
                     ]);
-            }else{
-                $pais = Pais::find($id);
-                $pais->name_es = $request->input('name_es');
-                $pais->name_en = $request->input('name_en');
-                $pais->save();
+        	}else{
+        		$testimonio = Testimonio::find($id);
+        		$testimonio->name = $request->input('name');
+        		$testimonio->location = $request->input('location');
+        		$testimonio->testimonio = $request->input('testimonio');
+        		$testimonio->save();
 
-                return response()->json(['success' => true]);
-            }
+        		return response()->json(['success' => true]);
+        	}
+        	
         } catch (Exception $e) {
-            \Log::info('Error editing pais: '.$e);
-            return response()->json(['success' => false], 500);
+        	\Log::info('Error editing testimonio: '.$e);
+        	return response()->json(['success' => false], 500);
         }
-
     }
 
     /**
@@ -141,7 +144,7 @@ class PaisController extends Controller
     public function destroy($id)
     {
         //
-        Pais::destroy($id);
+        Testimonio::destroy($id);
         return response()->json(['success' => true]);
     }
 }

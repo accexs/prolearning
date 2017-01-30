@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use App\Pais;
+use App\Promocion;
 use Validator;
 
-class PaisController extends Controller
+use App\Http\Requests;
+
+class PromocionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +18,8 @@ class PaisController extends Controller
     public function index()
     {
         //
-        return response()->json(Pais::all());
+        return response()->json(Promocion::all());
+        
     }
 
     /**
@@ -41,9 +41,11 @@ class PaisController extends Controller
     public function store(Request $request)
     {
         //
-        $rules = [
-            'name_es' => 'required',
-            'name_en' => 'required', 
+        $rules[
+            'title_es',
+            'title_en',
+            'desc_es',
+            'desc_en'
         ];
         try {
 
@@ -56,18 +58,21 @@ class PaisController extends Controller
                     'code' => 400
                     ]);
             }else{
-                $pais = new Pais;
-                $pais->name_es = $request->input('name_es');
-                $pais->name_en = $request->input('name_en');
-                $pais->save();
+                $promocion = new Promocion;
+                $promocion->title_es = $request->input('title_es');
+                $promocion->title_en = $request->input('title_en');
+                $promocion->desc_es = $request->input('desc_es');
+                $promocion->desc_en = $request->input('desc_en');
 
-                return response()->json(['success' => true]);
+                $promocion->save();
+                return response()->json(['success' => true,
+                        'ciudad_id' => $promocion -> id]);
             }
+            
         } catch (Exception $e) {
-            \Log::info('Error creating pais: '.$e);
-            return response()->json(['success' => false], 500);
+            \Log::info('Error creating promocion: '.$e);
+            return response()->json(['success' => false]);
         }
-
     }
 
     /**
@@ -79,7 +84,6 @@ class PaisController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Pais::with('ciudades.institutos.programas.cursos')->find($id));
     }
 
     /**
@@ -103,9 +107,11 @@ class PaisController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $rules = [
-            'name_es' => 'required',
-            'name_en' => 'required', 
+        $rules[
+            'title_es',
+            'title_en',
+            'desc_es',
+            'desc_en'
         ];
         try {
 
@@ -118,18 +124,21 @@ class PaisController extends Controller
                     'code' => 400
                     ]);
             }else{
-                $pais = Pais::find($id);
-                $pais->name_es = $request->input('name_es');
-                $pais->name_en = $request->input('name_en');
-                $pais->save();
+                $promocion = Promocion::find($id);
+                $promocion->title_es = $request->input('title_es');
+                $promocion->title_en = $request->input('title_en');
+                $promocion->desc_es = $request->input('desc_es');
+                $promocion->desc_en = $request->input('desc_en');
 
-                return response()->json(['success' => true]);
+                $promocion->save();
+                return response()->json(['success' => true,
+                        'ciudad_id' => $promocion -> id]);
             }
+            
         } catch (Exception $e) {
-            \Log::info('Error editing pais: '.$e);
-            return response()->json(['success' => false], 500);
+            \Log::info('Error editing promocion: '.$e);
+            return response()->json(['success' => false]);
         }
-
     }
 
     /**
@@ -141,7 +150,7 @@ class PaisController extends Controller
     public function destroy($id)
     {
         //
-        Pais::destroy($id);
+        Promocion::destroy($id);
         return response()->json(['success' => true]);
     }
 }

@@ -62,7 +62,7 @@
                                     </div>
                                     <div ng-repeat="error in errors" class=" col-md-5">
                                         <p> <%error%> </p>
-                                    </div>    
+                                    </div>
                                 </div>
                                                     
                                 <div class="row modal-footer">

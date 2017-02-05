@@ -9,17 +9,17 @@ angular.module('DestinoController', [
 				$scope.paises = data;
 			});
 
-	$scope.pais1 = 1;
-	$scope.pais2 = 2;
-	$scope.pais3 = 3;
-	$scope.pais4 = 4;
-	$scope.pais5 = 5;
-	$scope.pais6 = 8;
-	$scope.pais7 = 6;
-	$scope.pais8 = 9;
-	$scope.pais9 = 7;
-	$scope.pais10 = 10;
-	$scope.pais11 = 11;
+	$scope.pais1 = 2;//usa
+	$scope.pais2 = 12;//canada
+	$scope.pais3 = 22;//francia
+	$scope.pais4 = 32;//alemania
+	$scope.pais5 = 42;//australia
+	$scope.pais6 = 72;//inglaterra
+	$scope.pais7 = 52;//malta
+	$scope.pais8 = 62;//italia
+	$scope.pais9 = 82;//sudafrica
+	$scope.pais10 = 92;//irlanda
+	$scope.pais11 = 102;//india
 
 	})
 

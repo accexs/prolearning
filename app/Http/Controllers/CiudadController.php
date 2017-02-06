@@ -53,15 +53,15 @@ class CiudadController extends Controller
                     ]);
             }else{
                 $ciudad = new Ciudad;
-                $ciudad -> name_es = $request->input('name_es');
-                $ciudad -> name_en = $request->input('name_en');
-                $ciudad -> info_es = $request->input('info_es');
-                $ciudad -> info_en = $request->input('info_en');
+                $ciudad->name_es = $request->input('name_es');
+                $ciudad->name_en = $request->input('name_en');
+                $ciudad->info_es = $request->input('info_es');
+                $ciudad->info_en = $request->input('info_en');
                 
                 Pais::find($request->input('pais'))->ciudades() -> save($ciudad);
 
                 return response()->json(['success' => true,
-                        'ciudad_id' => $ciudad -> id]);
+                        'ciudad_id' => $ciudad->id]);
             }
         } catch (Exception $e) {
             \Log::info('Error creating ciudad: '.$e);
@@ -117,7 +117,6 @@ class CiudadController extends Controller
                 $ciudad -> name_en = $request->input('name_en');
                 $ciudad -> info_es = $request->input('info_es');
                 $ciudad -> info_en = $request->input('info_en');
-                $ciudad -> code = $request->input('code');
                 $fotos = $ciudad->fotos;
                 foreach ($fotos as $foto) {
                     # code...
@@ -136,7 +135,7 @@ class CiudadController extends Controller
                 }*/
                 Pais::find($request->input('pais_id'))->ciudades() -> save($ciudad);
                 return response()->json(['success' => true,
-                        'ciudad_id' => $ciudad -> id,
+                        'ciudad_id' => $ciudad->id,
                         'fotos' => $fotos]);
             }
         } catch (Exception $e) {

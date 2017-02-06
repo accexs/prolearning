@@ -15,6 +15,8 @@ var plApp = angular.module('plApp',
 		'tipoService',
 		'cursoCtrl',
 		'cursoService',
+		'promoCtrl',
+		'promoService',
 		'datatables'
 		],
 		function($interpolateProvider){

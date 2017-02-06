@@ -19,7 +19,7 @@ class CreateFotosTable extends Migration
             $table->integer('ciudad_id')->unsigned()->nullable();
             $table->integer('instituto_id')->unsigned()->nullable();
             $table->integer('promocion_id')->unsigned()->nullable();
-            $table->integer('testimonio_id')->unsigned();
+            $table->integer('testimonio_id')->unsigned()->nullable();
             $table->timestamps();
         });
 

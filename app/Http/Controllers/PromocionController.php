@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use App\Promocion;
 use Validator;
 
-use App\Http\Requests;
-
 class PromocionController extends Controller
 {
     /**
@@ -41,11 +39,11 @@ class PromocionController extends Controller
     public function store(Request $request)
     {
         //
-        $rules[
-            'title_es',
-            'title_en',
-            'desc_es',
-            'desc_en'
+        $rules = [
+            'title_es' => 'required',
+            'title_en' => 'required',
+            'desc_es' => 'required',
+            'desc_en' => 'required'
         ];
         try {
 
@@ -66,7 +64,7 @@ class PromocionController extends Controller
 
                 $promocion->save();
                 return response()->json(['success' => true,
-                        'ciudad_id' => $promocion -> id]);
+                        'promo_id' => $promocion->id]);
             }
             
         } catch (Exception $e) {
@@ -84,6 +82,7 @@ class PromocionController extends Controller
     public function show($id)
     {
         //
+        return response()->json(Promocion::with('fotos')->find($id));
     }
 
     /**
@@ -107,11 +106,11 @@ class PromocionController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $rules[
-            'title_es',
-            'title_en',
-            'desc_es',
-            'desc_en'
+        $rules = [
+            'title_es' => 'required',
+            'title_en' => 'required',
+            'desc_es' => 'required',
+            'desc_en' => 'required'
         ];
         try {
 
@@ -132,7 +131,7 @@ class PromocionController extends Controller
 
                 $promocion->save();
                 return response()->json(['success' => true,
-                        'ciudad_id' => $promocion -> id]);
+                        'promo_id' => $promocion->id]);
             }
             
         } catch (Exception $e) {

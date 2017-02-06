@@ -59,6 +59,12 @@ Route::group(['middleware' => ['web']], function () {
         //cursos
         Route::resource('cursos', 'CursoController');
         Route::get('cursos/programa/{id}','CursoController@indexByPrograma');
+        
+        //promociones
+        Route::resource('promos', 'PromocionController');
+
+        //testimonios
+        Route::resource('testimonios', 'TestimonioController');
 
     });
 

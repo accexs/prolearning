@@ -1,0 +1,11 @@
+insert into paises (name_es) values('USA');
+insert into paises (name_es) values('Canadá'); 
+insert into paises (name_es) values('Francia'); 
+insert into paises (name_es) values('Alemania'); 
+insert into paises (name_es) values('Australia');
+insert into paises (name_es) values('Malta');
+insert into paises (name_es) values('Italia');
+insert into paises (name_es) values('Inglaterra');
+insert into paises (name_es) values('Sudáfrica');
+insert into paises (name_es) values('Irlanda');
+insert into paises (name_es) values('India');

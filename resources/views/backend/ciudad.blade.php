@@ -162,6 +162,9 @@
                                     <label for="" class="col-md-4 control-label">Actual</label>
                                     <img class="col-md-3 thumb" ngf-thumbnail="thumb">
                                 </div>
+                                <div ng-repeat="error in errors" class=" col-md-5">
+                                    <p> <%error%> </p>
+                                </div> 
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary" id="btn-save" ng-disabled="ciudadForm.$invalid">Guardar</button>

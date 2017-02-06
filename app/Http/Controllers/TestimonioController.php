@@ -18,7 +18,7 @@ class TestimonioController extends Controller
     public function index()
     {
         //
-        return response()-json(Testimonio::all());
+        return response()->json(Testimonio::all());
     }
 
     /**

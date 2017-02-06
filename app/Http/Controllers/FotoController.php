@@ -57,6 +57,11 @@ class FotoController extends Controller
     			$foto -> instituto_id = $request->input('instituto_id');
     			$foto -> save();
     			return response()->json(['success' => true]);
+            }elseif ($request->input('promo_id')) {
+                # code...
+                $foto -> promocion_id = $request->input('promo_id');
+                $foto -> save();
+                return response()->json(['success' => true]);
     		}else{
     			return response()->json(['success' => false]);
     		}

@@ -18,6 +18,7 @@
 						<thead>
 							<tr>
 								<th class="text-center">Titulo español</th>
+								<th class="text-center">Estado</th>
 								<th class="text-center">Editar</th>
 								<th class="text-center">Borrar</th>
 							</tr>
@@ -25,6 +26,7 @@
 						<tbody ng-show="broadcast = 'cfpLoadingBar:completed'" class="text-center">
 							<tr ng-repeat="promo in promos">
 								<td><% promo.title_es %></td>
+								<td><input type="checkbox" value=""></td>
 								<td><button class="btn btn-info btn-sm" ng-click="promoModal('edit',promo.id)">Editar</button></td>
 								<td><button class="btn btn-danger btn-sm" ng-click="deletePromo(promo.id)">Eliminar</button></td>
 							</tr>

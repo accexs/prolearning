@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use App\Testimonio;
 use Validator;
 
-use App\Http\Requests;
-
 class TestimonioController extends Controller
 {
     /**
@@ -60,9 +58,10 @@ class TestimonioController extends Controller
         		$testimonio->name = $request->input('name');
         		$testimonio->location = $request->input('location');
         		$testimonio->testimonio = $request->input('testimonio');
-        		$testimonio->save();
 
-        		return response()->json(['success' => true]);
+        		$testimonio->save();
+                return response()->json(['success' => true,
+                        'testimonio_id' => $testimonio->id]);
         	}
         	
         } catch (Exception $e) {
@@ -80,7 +79,7 @@ class TestimonioController extends Controller
     public function show($id)
     {
         //
-        return response()->json(Testimonio::with('fotos'));
+        return response()->json(Testimonio::with('fotos')->find($id));
     }
 
     /**
@@ -124,14 +123,16 @@ class TestimonioController extends Controller
         		$testimonio->name = $request->input('name');
         		$testimonio->location = $request->input('location');
         		$testimonio->testimonio = $request->input('testimonio');
-        		$testimonio->save();
+                $testimonio->estado = 0;
 
-        		return response()->json(['success' => true]);
+        		$testimonio->save();
+                return response()->json(['success' => true,
+                        'testimonio_id' => $testimonio->id]);
         	}
         	
         } catch (Exception $e) {
         	\Log::info('Error editing testimonio: '.$e);
-        	return response()->json(['success' => false], 500);
+        	return response()->json(['success' => false]);
         }
     }
 

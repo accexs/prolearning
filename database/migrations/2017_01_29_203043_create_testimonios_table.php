@@ -17,6 +17,7 @@ class CreateTestimoniosTable extends Migration
             $table->string('name', 100);
             $table->string('location', 100);
             $table->text('testimonio');
+            $table->boolean('estado');
             $table->timestamps();
         });
 

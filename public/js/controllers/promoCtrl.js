@@ -54,7 +54,6 @@ angular.module('promoCtrl', [])
 				if (data.code == false) {
 					$scope.errors = data.errors;
 				}else{
-					alert(data.promo_id);
 					//save picture if any
 					for (var i = picFiles.length - 1; i >= 0; i--) {
 						picFiles[i].upload = Upload.upload({

@@ -115,6 +115,7 @@
     <script src="js/controllers/tipoCtrl.js"></script>
     <script src="js/controllers/cursoCtrl.js"></script>
     <script src="js/controllers/promoCtrl.js"></script>
+    <script src="js/controllers/testimonioCtrl.js"></script>
     <!--SERVICES-->
     <script src="js/services/paisService.js"></script>
     <script src="js/services/ciudadService.js"></script>
@@ -123,5 +124,6 @@
     <script src="js/services/tipoService.js"></script>
     <script src="js/services/cursoService.js"></script>
     <script src="js/services/promoService.js"></script>
+    <script src="js/services/testimonioService.js"></script>
 </body>
 </html>

@@ -40,27 +40,32 @@ class FotoController extends Controller
     		$filename = uniqid('img_') .'.'.$extension;
     		$path = 'uploads/';
     		$file->move($path,$filename);
-    		$foto -> img = $path.$filename;
+    		$foto->img = $path.$filename;
     		//check if pais or ciudad
     		if ($request->input('ciudad_id')) {
     			# code...
-    			$foto -> ciudad_id = $request->input('ciudad_id');
-    			$foto -> save();
+    			$foto->ciudad_id = $request->input('ciudad_id');
+    			$foto->save();
     			return response()->json(['success' => true]);
     		}elseif ($request->input('pais_id')) {
     			# code...
-    			$foto -> pais_id = $request->input('ciudad_id');
-    			$foto -> save();
+    			$foto->pais_id = $request->input('ciudad_id');
+    			$foto->save();
     			return response()->json(['success' => true]);
     		}elseif ($request->input('instituto_id')) {
     			# code...
-    			$foto -> instituto_id = $request->input('instituto_id');
-    			$foto -> save();
+    			$foto->instituto_id = $request->input('instituto_id');
+    			$foto->save();
     			return response()->json(['success' => true]);
             }elseif ($request->input('promo_id')) {
                 # code...
-                $foto -> promocion_id = $request->input('promo_id');
-                $foto -> save();
+                $foto->promocion_id = $request->input('promo_id');
+                $foto->save();
+                return response()->json(['success' => true]);
+            }elseif ($request->input('testimonio_id')) {
+                # code...
+                $foto->testimonio_id = $request->input('testimonio_id');
+                $foto->save();
                 return response()->json(['success' => true]);
     		}else{
     			return response()->json(['success' => false]);

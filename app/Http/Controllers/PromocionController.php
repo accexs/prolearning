@@ -61,6 +61,7 @@ class PromocionController extends Controller
                 $promocion->title_en = $request->input('title_en');
                 $promocion->desc_es = $request->input('desc_es');
                 $promocion->desc_en = $request->input('desc_en');
+                $promocion->estado = 0;
 
                 $promocion->save();
                 return response()->json(['success' => true,

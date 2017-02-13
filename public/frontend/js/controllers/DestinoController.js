@@ -16,8 +16,8 @@ angular.module('DestinoController', [
 	$scope.pais5 = 5;
 	$scope.pais6 = 8;
 	$scope.pais7 = 6;
-	$scope.pais8 = 9;
-	$scope.pais9 = 7;
+	$scope.pais8 = 7;
+	$scope.pais9 = 9;
 	$scope.pais10 = 10;
 	$scope.pais11 = 11;
 

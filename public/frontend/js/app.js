@@ -54,10 +54,10 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
                 'content': {
                     templateUrl: 'frontend/partials/_destino.html',
                     controller: 'DestinoDetailController'
-                },
+                }/*,
                 'footer': {
                     templateUrl: 'frontend/partials/_footer.html'
-                }
+                }*/
             }
         })
     .state('promociones', {

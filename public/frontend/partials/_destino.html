@@ -26,22 +26,31 @@
 <div class="row bg-primary">
 	<h1 class="text-center">¿QUÉ PUEDES CONSEGUIR?</h1>
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8" ng-repeat="programa in pais.ciudades[0].institutos[0].programas | filter:{tipo_id:1}">
 			<h3 class="text-success">PROGRAMAS PARA ADULTOS</h3>
-			<h4> {{ pais.ciudades[0].institutos[0].programas[0].name_es }} </h4>
+			<h4> {{ programa.name_es}} </h4>
+			<div ng-repeat="curso in programa.cursos">
+				<h5>{{ curso.name_es }}</h5>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8" ng-repeat="programa in pais.ciudades[0].institutos[0].programas | filter:{tipo_id:2}">
 			<h3 class="text-success">PROGRAMAS PARA JÓVENES</h3>
+			<h4> {{ programa.name_es}} </h4>
+			<div ng-repeat="curso in programa.cursos">
+				<h5>{{ curso.name_es }}</h5>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="row">
 	<h1 class="text-center text-info">INSTITUTOS DISPONIBLES</h1>
-	<div>
-		{{ pais.ciudades[0].institutos[0].name }}
+	<div ng-repeat="ciudad in pais.ciudades">
+		<div ng-repeat="instituto in ciudad.institutos">
+			{{ instituto.name }}
+		</div>
 	</div>
 </div>
 

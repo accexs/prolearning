@@ -43,7 +43,7 @@ angular.module('cursoCtrl', [])
 		}
 		console.log(id);
 		//$('#cursoModal').modal('show');
-		$scope.showCreate = true;
+		//$scope.showCreate = true;
 	}
 
 	//function to handle submitting the form

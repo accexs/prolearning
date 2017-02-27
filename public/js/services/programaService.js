@@ -13,12 +13,14 @@ angular.module('programaService', [])
 		//save programa (programaData)
 		save : function(mode , programaData, id) {
 			if (mode == 'edit') {
-				url = 'api/programas' + programaData.id;
+				method = 'PUT';
+				url = 'api/programas/' + programaData.id;
 			}else{
+				method = 'POST';
 				url = 'api/programas';
 			}
 			return $http({
-				method: 'POST',
+				method: method,
 				url: url,
 				headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
 				data: $.param(programaData)

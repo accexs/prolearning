@@ -76,7 +76,7 @@
                                                 <p class="col-md-offset-3" ng-show="institutoForm.desc_en.$invalid" class="help-inline">Descripción requerida.</p>
                                             </div>
                                         </div>
-                                        <div class="form-group error">
+                                        <!--<div class="form-group error">
                                             <label for="code" class="col-md-4 control-label">Ubicación 1</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="location1" value=" <% location1 %> " ng-model="institutoData.location1" required>
@@ -117,7 +117,7 @@
                                                 <input class="form-control" type="text" name="coord3" value=" <% coord3 %> " ng-model="institutoData.coord3" required>
                                                 <p class="col-md-offset-3" ng-show="institutoForm.coord3.$invalid" class="help-inline">Coordenadas requeridas.</p>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <div class="form-group error">
                                             <label class="col-md-4 control-label" for="img">Logo</label>
                                             <div class="col-md-5">

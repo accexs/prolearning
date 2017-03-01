@@ -6725,3 +6725,15 @@ button.close {
 .text-success {
   color: #A1F218;
 }
+.footer-bg-primary {
+  background-color: #003e6c;
+}
+.footer-text-info {
+  color: #0288bd;
+}
+.footer-color-text-info > h6 > a {
+  color: #03ACEF;
+}
+.footer-color-text-info > a:hover {
+  color: #005c9f;
+}

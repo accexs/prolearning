@@ -30,6 +30,10 @@ angular.module('DestinoController', [
 				$scope.pais = data;
 			});
 
+		Destino.get()
+			.success(function(data){
+				$scope.destinos = data;
+			});
 
 
 	})

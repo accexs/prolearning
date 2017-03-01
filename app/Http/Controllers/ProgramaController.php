@@ -104,6 +104,33 @@ class ProgramaController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $rules = [];
+         try {
+            $validator = Validator::make($request->all(), $rules);
+            if ($validator->fails()) {
+                # code...
+                return response()->json([
+                    'success' => false,
+                    'errors' => $validator->errors()->all()
+                    ]);
+            }else{
+                $programa = Programa::find($id);
+                $programa -> name_es = $request->input('name_es');
+                $programa -> name_en = $request->input('name_es');
+
+                
+                //Tipo::find($request->input('tipo'))->programas()->save($programa);
+                $programa -> tipo_id = $request->input('tipo');
+                Instituto::find($request->input('instituto'))->programas()->save($programa);
+
+                
+                return response()->json([
+                    'success' => true]);
+            }
+         } catch (Exception $e){
+            \Log::info('Error creating programa');
+            return response()->json(['success' => false]);
+         }
     }
 
     /**

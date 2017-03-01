@@ -18,8 +18,8 @@ class CreateInstitutosTable extends Migration
             $table->text('desc_es');
             $table->text('desc_en');
             //$table->string('logo',100);
-            $table->string('location1',150);
-            $table->string('coord1',30);
+            $table->string('location1',150)->nullable();
+            $table->string('coord1',30)->nullable();
             $table->string('location2',150)->nullable();
             $table->string('coord2',30)->nullable();
             $table->string('location3',150)->nullable();

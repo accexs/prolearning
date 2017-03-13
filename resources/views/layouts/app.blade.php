@@ -30,10 +30,26 @@
         .fa-btn {
             margin-right: 6px;
         }
+
+
+        .whole-div-link{
+          /* all rules required to make the whole div clickable */ 
+          position:absolute; 
+          width:80%;
+          height:80%;
+          top:0;
+          left: 0;
+          z-index: 1;
+          /* this is a fix for IE7-9 */
+          background-color:#ffffff;
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+          filter: alpha(opacity=0);  
+          opacity:0;  
+        }
     </style>
 </head>
 <body id="app-layout" >
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
 

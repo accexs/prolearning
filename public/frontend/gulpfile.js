@@ -11,7 +11,9 @@ gulp.task('default', function () {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-	gulp.watch('./**/*.html')
+	gulp.watch('./partials/*.html')
+		.on('change', browserSync.reload );
+	gulp.watch('./js/**/*.js')
 		.on('change', browserSync.reload );
 	gulp.watch('./bower_components/bootstrap/less/**/*.less', ['styles'] );
 	console.log('Frontend watchers started');

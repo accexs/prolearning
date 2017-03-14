@@ -52,13 +52,6 @@
                                                 <p class="col-md-offset-3" ng-show="paisForm.name_es.$invalid" class="help-inline">Nombre es requerido.</p>
                                             </div>
                                         </div>
-                                        <div class="form-group error">
-                                            <label for="name_en" class="col-md-4 control-label">Nombre ingles</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="paisData.name_en" required>
-                                                <p class="col-md-offset-3" ng-show="paisForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div ng-repeat="error in errors" class=" col-md-5">
                                         <p> <%error%> </p>
@@ -132,24 +125,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group error">
-                                    <label for="name_en" class="col-md-4 control-label">Nombre ingles</label>
-                                    <div class="col-md-4">
-                                        <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="ciudadData.name_en" required>
-                                        <p class="col-md-offset-3" ng-show="ciudadForm.name_en.$invalid"><small>Nombre es requerido</small></p>    
-                                    </div>
-                                </div>
-                                <div class="form-group error">
                                     <label for="info_es" class="col-md-4 control-label">Informacion español</label>
                                     <div class="col-md-6">
                                         <textarea ui-tinymce class="form-control" type="text" name="info_es" value=" <% info_es %> " ng-model="ciudadData.info_es" required></textarea>
                                         <p class="col-md-offset-3" ng-show="ciudadForm.info_es.$invalid" class="help-inline">Informacion requerida.</p>
-                                    </div>
-                                </div>
-                                <div class="form-group error">
-                                    <label for="info_en" class="col-md-4 control-label">Informacion ingles</label>
-                                    <div class="col-md-6">
-                                        <textarea ui-tinymce class="form-control" type="text" name="info_en" value=" <% info_en %> " ng-model="ciudadData.info_en" required></textarea>
-                                        <p class="col-md-offset-3" ng-show="ciudadForm.info_en.$invalid" class="help-inline">Informacion requerida.</p>
                                     </div>
                                 </div>
                                 <div class="form-group error">

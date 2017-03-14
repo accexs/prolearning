@@ -70,27 +70,20 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="desc_en" class="col-md-4 control-label">Descripción ingles</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="desc_en" value=" <% desc_en %> " ng-model="institutoData.desc_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.desc_en.$invalid" class="help-inline">Descripción requerida.</p>
-                                            </div>
-                                        </div>
-                                        <!--<div class="form-group error">
-                                            <label for="code" class="col-md-4 control-label">Ubicación 1</label>
+                                            <label for="code" class="col-md-4 control-label">Ubicación</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="location1" value=" <% location1 %> " ng-model="institutoData.location1" required>
                                                 <p class="col-md-offset-3" ng-show="institutoForm.location1.$invalid" class="help-inline">Ubicación requerida.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="code" class="col-md-4 control-label">Coordenadas 1</label>
+                                            <label for="code" class="col-md-4 control-label">Coordenadas</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="coord1" value=" <% coord1 %> " ng-model="institutoData.coord1" required>
                                                 <p class="col-md-offset-3" ng-show="institutoForm.coord1.$invalid" class="help-inline">Coordenadas requeridas.</p>
                                             </div>
                                         </div>
-                                        <div class="form-group error">
+                                        <!--<div class="form-group error">
                                             <label for="code" class="col-md-4 control-label">Ubicación 2</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="location2" value=" <% location2 %> " ng-model="institutoData.location2" required>
@@ -136,13 +129,6 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="reasons_en" class="col-md-4 control-label">Razones inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="reasons_en" value=" <% reasons_en %> " ng-model="institutoData.reasons_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.reasons_en.$invalid" class="help-inline">Razones requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="website" class="col-md-4 control-label">Website</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="website" value=" <% website %> " ng-model="institutoData.website" required>
@@ -164,24 +150,10 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="campustour_en" class="col-md-4 control-label">Campus Tour inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="campustour_en" value=" <% campustour_en %> " ng-model="institutoData.campustour_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.campustour_en.$invalid" class="help-inline">Campus Tour requerido.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="programs_es" class="col-md-4 control-label">Programas español</label>
                                             <div class="col-md-6">
                                                 <textarea ui-tinymce class="form-control" type="text" name="programs_es" value=" <% programs_es %> " ng-model="institutoData.programs_es" required></textarea>
                                                 <p class="col-md-offset-3" ng-show="institutoForm.programs_es.$invalid" class="help-inline">Programas requeridos.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="programs_en" class="col-md-4 control-label">Programas inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="programs_en" value=" <% programs_en %> " ng-model="institutoData.programs_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.programs_en.$invalid" class="help-inline">Programas requeridos.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
@@ -192,24 +164,10 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="accomm_en" class="col-md-4 control-label">Alojamiento y estadía inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="accomm_en" value=" <% accomm_en %> " ng-model="institutoData.accomm_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.accomm_en.$invalid" class="help-inline">Alojamiento y estadía requeridos.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="activities_es" class="col-md-4 control-label">Actividades extra español</label>
                                             <div class="col-md-6">
                                                 <textarea ui-tinymce class="form-control" type="text" name="activities_es" value=" <% activities_es %> " ng-model="institutoData.activities_es" required></textarea>
                                                 <p class="col-md-offset-3" ng-show="institutoForm.activities_es.$invalid" class="help-inline">Actividades extra requeridas.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="activities_en" class="col-md-4 control-label">Actividades extra inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="activities_en" value=" <% activities_en %> " ng-model="institutoData.activities_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="institutoForm.activities_en.$invalid" class="help-inline">Actividades extra requeridas.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">

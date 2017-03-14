@@ -49,13 +49,6 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="name_en" class="col-md-4 control-label">Nombre inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="cursoData.name_en" required>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="summary_es" class="col-md-4 control-label">Resumen español</label>
                                             <div class="col-md-6">
                                                 <textarea ui-tinymce class="form-control" type="text" name="summary_es" value=" <% info_es %> " ng-model="cursoData.summary_es" required></textarea>
@@ -63,23 +56,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="summary_en" class="col-md-4 control-label">Resumen inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="summary_en" value=" <% info_es %> " ng-model="cursoData.summary_en" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.info_en.$invalid" class="help-inline">Resumen requerido.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="desc_en" class="col-md-4 control-label">Descripción español</label>
                                             <div class="col-md-6">
                                                 <textarea ui-tinymce class="form-control" type="text" name="desc_es" value=" <% info_es %> " ng-model="cursoData.desc_es" required></textarea>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.info_en.$invalid" class="help-inline">Descripción requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="desc_en" class="col-md-4 control-label">Descripción inglés</label>
-                                            <div class="col-md-6">
-                                                <textarea ui-tinymce class="form-control" type="text" name="desc_en" value=" <% info_es %> " ng-model="cursoData.desc_en" required></textarea>
                                                 <p class="col-md-offset-3" ng-show="cursoForm.info_en.$invalid" class="help-inline">Descripción requerida.</p>
                                             </div>
                                         </div>
@@ -91,24 +70,10 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="duration_en" class="col-md-4 control-label">Duración inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="duration_en" value=" <% duration_en %> " ng-model="cursoData.duration_en" required>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.duration_en.$invalid" class="help-inline">Duración es requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="duration_en" class="col-md-4 control-label">Edad español</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="age_es" value=" <% age_es %> " ng-model="cursoData.age_es" required>
                                                 <p class="col-md-offset-3" ng-show="cursoForm.age_es.$invalid" class="help-inline">Edad es requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="duration_en" class="col-md-4 control-label">Edad inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="age_en" value=" <% age_en %> " ng-model="cursoData.age_en" required>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.age_en.$invalid" class="help-inline">Edad es requerida.</p>
                                             </div>
                                         </div>
                                         <div class="form-group error">
@@ -119,24 +84,10 @@
                                             </div>
                                         </div>
                                         <div class="form-group error">
-                                            <label for="quantity_en" class="col-md-4 control-label">Cantidad estudiantes inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="quantity_en" value=" <% quantity_en %> " ng-model="cursoData.quantity_en" required>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.quantity_en.$invalid" class="help-inline">Candtidad es requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
                                             <label for="date_es" class="col-md-4 control-label">Fecha del curso español</label>
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="date_es" value=" <% date_es %> " ng-model="cursoData.date_es" required>
                                                 <p class="col-md-offset-3" ng-show="cursoForm.date_es.$invalid" class="help-inline">Fecha es requerida.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="date_en" class="col-md-4 control-label">Fecha del curso inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="date_en" value=" <% date_en %> " ng-model="cursoData.date_en" required>
-                                                <p class="col-md-offset-3" ng-show="cursoForm.date_en.$invalid" class="help-inline">Fecha es requerida.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -242,13 +193,6 @@
                                             <div class="col-md-4">
                                                 <input class="form-control" type="text" name="name_es" value=" <% name_es %> " ng-model="programaData.name_es" required>
                                                 <p class="col-md-offset-3" ng-show="programaForm.name_es.$invalid" class="help-inline">Nombre es requerido.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group error">
-                                            <label for="name_en" class="col-md-4 control-label">Nombre inglés</label>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" name="name_en" value=" <% name_en %> " ng-model="programaData.name_en" required>
-                                                <p class="col-md-offset-3" ng-show="programaForm.name_en.$invalid" class="help-inline">Nombre es requerido.</p>
                                             </div>
                                         </div>
                                     </div>

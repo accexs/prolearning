@@ -16,9 +16,9 @@ class CreatePromocionesTable extends Migration
             $table->increments('id');
             $table->boolean('estado');
             $table->string('title_es');
-            $table->string('title_en');
+            $table->string('title_en')->nullable();
             $table->text('desc_es');
-            $table->text('desc_en');
+            $table->text('desc_en')->nullable();
             $table->timestamps();
         });
 

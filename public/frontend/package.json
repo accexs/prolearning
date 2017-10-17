@@ -9,6 +9,7 @@
   "author": "ronny.arvelo@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1"
   },
   "dependencies": {

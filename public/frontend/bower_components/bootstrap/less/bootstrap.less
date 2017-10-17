@@ -150,3 +150,37 @@
 .footer-color-text-info > a:hover {
   color: @brand-primary;
 }
+
+.image-green {
+    position:relative;
+}
+
+.image-green:after, .image-green:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image-green:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background: rgba(161, 242, 24, 0.8);
+}
+.image-green:before {
+    content: attr(data-content);
+    width:100%;
+    color:#fff;
+    z-index:1;
+    bottom:0;
+    //text-align: right;
+    //text-indent: 75%;
+    font-size: 200%;
+    font-weight: bolder;
+    //background: linear-gradient(to right, #FFFFFF 0%, #1D6FAD 100%);
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.image-green:hover:after, .image-green:hover:before {
+    opacity:1;
+}

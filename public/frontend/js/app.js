@@ -32,7 +32,7 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'frontend/partials/_programas.html'
                 },
                 'footer': {
-                    templateUrl: 'frontend/partials/_footer.html'
+                    templateUrl: 'frontend/partials/_footer_dark.html'
                 }
             }
         })
@@ -54,10 +54,10 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
                 'content': {
                     templateUrl: 'frontend/partials/_destino.html',
                     controller: 'DestinoDetailController'
-                }/*,
+                },
                 'footer': {
-                    templateUrl: 'frontend/partials/_footer.html'
-                }*/
+                    templateUrl: 'frontend/partials/_footer_dark.html'
+                }
             }
         })
     .state('promociones', {
@@ -89,7 +89,7 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'frontend/partials/_contactanos.html'
                 },
                 'footer': {
-                    templateUrl: 'frontend/partials/_footer.html'
+                    templateUrl: 'frontend/partials/_footer_dark.html'
                 }
             }
         })
@@ -100,7 +100,7 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'frontend/partials/_conocenos.html'
                 },
                 'footer': {
-                    templateUrl: 'frontend/partials/_footer.html'
+                    templateUrl: 'frontend/partials/_footer_dark.html'
                 }
             }
         });

@@ -46,7 +46,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" ui-sref="home">Prolearning</a>
+							<a class="navbar-brand" ui-sref="home"><img class="responsive" src="/frontend/img/logo1.png"></a>
 						</div>
 				
 						<!-- Collect the nav links, forms, and other content for toggling -->

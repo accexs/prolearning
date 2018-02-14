@@ -2,6 +2,7 @@ var frontPl = angular.module('frontPl',
 	[
     'HomeController',
     'DestinoController',
+    'ProgramaController',
 	'ui.router',
 	'ngAnimate'
 	]);
@@ -29,7 +30,8 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
             url: '/programas',
             views: {
                 'content': {
-                    templateUrl: 'frontend/partials/_programas.html'
+                    templateUrl: 'frontend/partials/_programas.html',
+                    controller: 'ProgramaController'
                 },
                 'footer': {
                     templateUrl: 'frontend/partials/_footer_dark.html'
@@ -87,6 +89,17 @@ frontPl.config(function($stateProvider, $urlRouterProvider) {
             views: {
                 'content': {
                     templateUrl: 'frontend/partials/_contactanos.html'
+                },
+                'footer': {
+                    templateUrl: 'frontend/partials/_footer_dark.html'
+                }
+            }
+        })
+    .state('faqs', {
+            url: '/faqs',
+            views: {
+                'content': {
+                    templateUrl: 'frontend/partials/_conocenos.html'
                 },
                 'footer': {
                     templateUrl: 'frontend/partials/_footer_dark.html'

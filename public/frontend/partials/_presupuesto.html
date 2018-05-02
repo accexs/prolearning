@@ -38,13 +38,24 @@
 			<div class="form-group">
 				<label for="" class="col-md-3 control-label">*Categoria</label>
 				<div class="col-md-8">
-					<input type="" name="" class="form-control" placeholder="">
+					<select class="form-control" name="pais" ng-model="selectedCat" required>
+					    <option value="">Seleccione categoria</option>
+					    <option value="Adultos">Adultos (17 años o +)</option>
+					    <option value="Jóvenes">Jóvenes (9-16 años)</option>
+					</select>
+					<p class="col-md-offset-3" ng-show="ciudadForm.pais.$error.required" class="help-inline">Categoria es requerido.</p>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="" class="col-md-3 control-label">*Horario</label>
 				<div class="col-md-8">
-					<input type="" name="" class="form-control" placeholder="">
+					<select class="form-control" name="pais" ng-model="selectedCat" required>
+					    <option value="">Seleccione horario</option>
+					    <option value="Estándar">Estándar (9:00 am – 12:30 pm)</option>
+					    <option value="Semi intensivo">Semi intensivo (9:00 am – 1:45 pm)</option>
+					    <option value="Intensivo">Intensivo (9:00 am – 3:45 pm)</option>
+					</select>
+					<p class="col-md-offset-3" ng-show="ciudadForm.pais.$error.required" class="help-inline">Categoria es requerido.</p>
 				</div>
 			</div>
 			<div class="form-group">
@@ -56,20 +67,30 @@
 			<div class="form-group">
 				<label for="" class="col-md-3 control-label">Fecha tentativa del viaje</label>
 				<div class="col-md-8">
-					<input type="" name="" class="form-control" placeholder="">
+					<input type="date" name="" class="form-control" placeholder="">
 				</div>
 			</div>
 			<legend class="text-primary">Datos del programa</legend>
 			<div class="form-group">
 				<label for="" class="col-md-3 control-label">*Tipo de alojamiento</label>
 				<div class="col-md-8">
-					<input type="" name="" class="form-control" placeholder="">
+					<select class="form-control" name="pais" ng-model="selectedCat" required>
+					    <option value="">Seleccione alojamiento</option>
+					    <option value="Casa de Familia">Casa de Familia (Comidas incluidas)</option>
+					    <option value="Residencia">Residencia (Sin comidas)</option>
+					</select>
+					<p class="col-md-offset-3" ng-show="ciudadForm.pais.$error.required" class="help-inline">Categoria es requerido.</p>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="" class="col-md-3 control-label">*Seguro médico</label>
 				<div class="col-md-8">
-					<input type="" name="" class="form-control" placeholder="">
+					<select class="form-control" name="pais" ng-model="selectedCat" required>
+					    <option value="">¿Desea seguro médico?</option>
+					    <option value="Si">Si</option>
+					    <option value="No">No</option>
+					</select>
+					<p class="col-md-offset-3" ng-show="ciudadForm.pais.$error.required" class="help-inline">Categoria es requerido.</p>
 				</div>
 			</div>
 			<div class="form-group">
@@ -86,8 +107,17 @@
 			</div>
 			<div class="form-group">
 				<label for="" class="col-md-4 control-label">¿Cómo se enteró de <strong>PRO-LEARNING</strong></label>
-				<div class="col-md-7">
-					<input type="" name="" class="form-control" placeholder="">
+				<div class="col-md-6">
+					<select class="form-control" name="pais" ng-model="selectedCat" required>
+					    <option value="">Seleccione una opción</option>
+					    <option value="Redes sociales">Redes sociales</option>
+					    <option value="Evento">Evento</option>
+					    <option value="Radio">Radio</option>
+					    <option value="Conocido">Conocido</option>
+					    <option value="Medios impresos">Medios impresos</option>
+					    <option value="Otros">Otros</option>
+					</select>
+					<p class="col-md-offset-3" ng-show="ciudadForm.pais.$error.required" class="help-inline">Categoria es requerido.</p>
 				</div>
 			</div>
 			<div class="form-group">

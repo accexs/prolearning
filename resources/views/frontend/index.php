@@ -101,8 +101,10 @@
 			<!--controllers-->
 			<script src="./frontend/js/controllers/HomeController.js"></script>
 			<script src="./frontend/js/controllers/DestinoController.js"></script>
+			<script src="./frontend/js/controllers/ProgramaController.js"></script>
 			<!--services-->
 			<script src="./frontend/js/services/destinoService.js"></script>
+			<script src="./frontend/js/services/programaService.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="./frontend/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!--Mylivechat-->

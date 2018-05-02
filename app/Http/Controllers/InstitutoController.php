@@ -28,8 +28,9 @@ class InstitutoController extends Controller
      *
      * @param  int  $id (ciudad)
      * @return \Illuminate\Http\Response
-     */    
-    public function indexByCiudad($id){
+     */
+    public function indexByCiudad($id)
+    {
         //
         return response()->json(Ciudad::find($id)->institutos);
     }
@@ -63,7 +64,7 @@ class InstitutoController extends Controller
                     'success' => false,
                     'errors' => $validator->errors()->all()
                     ]);
-            }else{
+            } else {
                 $instituto = new Instituto;
                 $instituto -> name = $request->input('name');
                 $instituto -> desc_es = $request->input('desc_es');
@@ -94,7 +95,7 @@ class InstitutoController extends Controller
                 return response()->json(['success' => true,
                         'instituto_id' => $instituto->id]);
             }
-        } catch (Exception $e){
+        } catch (Exception $e) {
             \Log::info('Error creating instituto');
             return response()->json(['success' => false]);
         }
@@ -144,7 +145,7 @@ class InstitutoController extends Controller
                     'errors' => $valwidator->errors()->all(),
                     'code' => 400
                     ]);
-            }else{
+            } else {
                 $instituto = Instituto::find($id);
                 $instituto -> name = $request->input('name');
                 $instituto -> desc_es = $request->input('desc_es');
@@ -185,7 +186,7 @@ class InstitutoController extends Controller
                 return response()->json(['success' => true,
                         'instituto_id' => $instituto->id]);
             }
-        } catch (Exception $e){
+        } catch (Exception $e) {
             \Log::info('Error creating instituto');
             return response()->json(['success' => false]);
         }

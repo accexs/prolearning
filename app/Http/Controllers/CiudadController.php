@@ -51,7 +51,7 @@ class CiudadController extends Controller
                     'errors' => $validator->errors()->all(),
                     'code' => 400
                     ]);
-            }else{
+            } else {
                 $ciudad = new Ciudad;
                 $ciudad->name_es = $request->input('name_es');
                 $ciudad->name_en = $request->input('name_en');
@@ -111,7 +111,7 @@ class CiudadController extends Controller
                     'success' => false,
                     'errors' => $validator->errors()->all()
                     ]);
-            }else{
+            } else {
                 $ciudad = Ciudad::find($id);
                 $ciudad -> name_es = $request->input('name_es');
                 $ciudad -> name_en = $request->input('name_en');

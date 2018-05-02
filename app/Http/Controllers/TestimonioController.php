@@ -41,32 +41,30 @@ class TestimonioController extends Controller
         $rules = [
             'name' => 'required',
             'location' => 'required',
-            'testimonio' => 'required' 
+            'testimonio' => 'required'
         ];
         try {
-
-        	$validator = Validator::make($request->all(), $rules);
-        	if ($validator->fails()) {
-        		# code...
-        		return response()->json([
+            $validator = Validator::make($request->all(), $rules);
+            if ($validator->fails()) {
+                # code...
+                return response()->json([
                     'success' => false,
                     'errors' => $validator->errors()->all(),
                     'code' => 400
                     ]);
-        	}else{
-        		$testimonio = new Testimonio;
-        		$testimonio->name = $request->input('name');
-        		$testimonio->location = $request->input('location');
-        		$testimonio->testimonio = $request->input('testimonio');
+            } else {
+                $testimonio = new Testimonio;
+                $testimonio->name = $request->input('name');
+                $testimonio->location = $request->input('location');
+                $testimonio->testimonio = $request->input('testimonio');
 
-        		$testimonio->save();
+                $testimonio->save();
                 return response()->json(['success' => true,
                         'testimonio_id' => $testimonio->id]);
-        	}
-        	
+            }
         } catch (Exception $e) {
-        	\Log::info('Error creating testimonio: '.$e);
-        	return response()->json(['success' => false], 500);
+            \Log::info('Error creating testimonio: '.$e);
+            return response()->json(['success' => false], 500);
         }
     }
 
@@ -106,33 +104,31 @@ class TestimonioController extends Controller
         $rules = [
             'name' => 'required',
             'location' => 'required',
-            'testimonio' => 'required' 
+            'testimonio' => 'required'
         ];
         try {
-
-        	$validator = Validator::make($request->all(), $rules);
-        	if ($validator->fails()) {
-        		# code...
-        		return response()->json([
+            $validator = Validator::make($request->all(), $rules);
+            if ($validator->fails()) {
+                # code...
+                return response()->json([
                     'success' => false,
                     'errors' => $validator->errors()->all(),
                     'code' => 400
                     ]);
-        	}else{
-        		$testimonio = Testimonio::find($id);
-        		$testimonio->name = $request->input('name');
-        		$testimonio->location = $request->input('location');
-        		$testimonio->testimonio = $request->input('testimonio');
+            } else {
+                $testimonio = Testimonio::find($id);
+                $testimonio->name = $request->input('name');
+                $testimonio->location = $request->input('location');
+                $testimonio->testimonio = $request->input('testimonio');
                 $testimonio->estado = 0;
 
-        		$testimonio->save();
+                $testimonio->save();
                 return response()->json(['success' => true,
                         'testimonio_id' => $testimonio->id]);
-        	}
-        	
+            }
         } catch (Exception $e) {
-        	\Log::info('Error editing testimonio: '.$e);
-        	return response()->json(['success' => false]);
+            \Log::info('Error editing testimonio: '.$e);
+            return response()->json(['success' => false]);
         }
     }
 
